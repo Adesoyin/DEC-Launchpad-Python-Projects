@@ -1,0 +1,146 @@
+2025-10-31 13:30:27,266 [INFO] Scheduler started — Daily (7 AM), Weekly (Friday 7 AM)
+2025-10-31 18:03:52,808 [INFO] Scheduler started — Daily (7 AM), Weekly (Friday 7 AM)
+2025-10-31 18:39:33,349 [WARNING] Attempt 1 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000292FF1746E0>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-10-31 18:39:38,353 [WARNING] Attempt 2 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000292FF0DFB10>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-10-31 18:39:43,356 [WARNING] Attempt 3 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000292FF18C550>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-10-31 18:39:48,358 [ERROR] All retries failed fetching the quote.
+2025-10-31 18:39:48,360 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-10-31 18:40:41,898 [WARNING] Attempt 1 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000271F49846E0>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-10-31 18:40:46,901 [WARNING] Attempt 2 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000271F48EFB10>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-10-31 18:40:51,906 [WARNING] Attempt 3 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000271F499C550>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-10-31 18:40:56,907 [ERROR] All retries failed fetching the quote.
+2025-10-31 18:40:56,908 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-10-31 18:41:18,686 [WARNING] Attempt 1 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024F169546E0>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-10-31 18:41:34,816 [WARNING] Attempt 2 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024F168BFB10>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-10-31 18:41:39,824 [WARNING] Attempt 3 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024F1696C550>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-10-31 18:41:44,825 [ERROR] All retries failed fetching the quote.
+2025-10-31 18:41:44,826 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-10-31 19:00:50,610 [WARNING] 2025-10-31 19:00:50.610080: Attempt 1 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DAEFBF46E0>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-10-31 19:00:53,613 [WARNING] 2025-10-31 19:00:53.613172: Attempt 2 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DAEFB5FB10>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-10-31 19:00:56,614 [ERROR] All retries failed fetching the quote.
+2025-10-31 19:00:56,616 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-10-31 19:07:15,973 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 19:07:15,978 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-10-31 19:14:41,250 [WARNING] Attempt 1 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000025FC76C0830>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-10-31 19:14:44,253 [WARNING] Attempt 2 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000025FC762FB10>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-10-31 19:14:47,254 [ERROR] All retries failed fetching the quote.
+2025-10-31 19:14:48,064 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-10-31 19:16:05,976 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 19:16:05,979 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-10-31 19:21:23,270 [WARNING] Attempt 1 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000254B30D46E0>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-10-31 19:21:26,275 [WARNING] Attempt 2 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000254B303FB10>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-10-31 19:21:29,277 [ERROR] All retries failed fetching the quote.
+2025-10-31 19:21:29,279 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-10-31 19:22:04,840 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 19:22:04,845 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-10-31 19:27:01,903 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 19:27:01,914 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-10-31 19:32:19,698 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 19:32:21,875 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 19:32:22,822 [INFO] 2025-10-31 19:32:22.141328: Quote successfully inserted into zenquote table.
+2025-10-31 19:32:22,824 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-10-31 20:12:56,614 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 20:12:58,112 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 20:12:58,572 [INFO] 2025-10-31 20:12:58.190197: Quote successfully inserted into zenquote table.
+2025-10-31 20:12:58,573 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-10-31 20:50:48,975 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 20:50:50,431 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 20:50:50,978 [INFO] 2025-10-31 20:50:50.507465: Quote successfully inserted into zenquote table.
+2025-10-31 20:50:50,979 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-10-31 20:59:57,533 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 20:59:59,048 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 20:59:59,443 [INFO] 2025-10-31 20:59:59.113734: Quote successfully inserted into zenquote table.
+2025-10-31 21:00:00,957 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 21:00:01,238 [INFO] 2025-10-31 21:00:00.959589: Quote successfully inserted into zenquote table.
+2025-10-31 21:00:01,430 [INFO] Retrieved 1 active Daily users.
+2025-10-31 21:09:34,771 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 21:09:36,100 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 21:09:36,522 [INFO] Quote successfully inserted into zenquote table.
+2025-10-31 21:09:38,041 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 21:09:38,269 [INFO] Quote successfully inserted into zenquote table.
+2025-10-31 21:09:38,515 [INFO] Retrieved 1 active Daily user(s).
+2025-10-31 21:11:49,215 [ERROR] Failed to send email to adeboladesoyin@gmail.com: Connection unexpectedly closed
+2025-10-31 21:11:49,392 [INFO] Logged 1 email results successfully.
+2025-10-31 21:11:54,232 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-10-31 21:11:54,232 [INFO] Completed Daily quote send cycle successfully.
+2025-10-31 21:11:54,233 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-10-31 22:37:26,428 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 22:37:28,060 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 22:37:28,602 [INFO] Quote successfully inserted into zenquote table.
+2025-10-31 22:37:30,210 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 22:37:30,547 [INFO] Quote successfully inserted into zenquote table.
+2025-10-31 22:37:30,782 [INFO] Retrieved 1 active Daily user(s).
+2025-10-31 22:37:34,408 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-10-31 22:37:34,640 [INFO] Logged 1 email results successfully.
+2025-10-31 22:37:38,349 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-10-31 22:37:38,349 [INFO] Completed Daily quote send cycle successfully.
+2025-10-31 22:37:38,350 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-10-31 22:42:04,028 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 22:42:05,563 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 22:42:06,002 [INFO] Quote successfully inserted into zenquote table.
+2025-10-31 22:42:07,509 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 22:42:07,811 [INFO] Quote successfully inserted into zenquote table.
+2025-10-31 22:42:08,039 [INFO] Retrieved 1 active Daily user(s).
+2025-10-31 22:44:19,297 [ERROR] Failed to send email to adeboladesoyin@gmail.com: Connection unexpectedly closed
+2025-10-31 22:44:19,563 [INFO] Logged 1 email results successfully.
+2025-10-31 22:44:23,395 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-10-31 22:44:23,395 [INFO] Completed Daily quote send cycle successfully.
+2025-10-31 22:44:23,396 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-10-31 22:46:54,084 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 22:46:55,665 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 22:46:56,118 [INFO] Quote successfully inserted into zenquote table.
+2025-10-31 22:46:57,711 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 22:46:58,071 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Believe in your infinite potential. Your only limitations are those you set upon yourself., 2025-10-31) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'Believe in your infinite potential. Your only limitations are those you set upon yourself.', 'author': 'Roy T. Bennett', 'trans_date': datetime.datetime(2025, 10, 31, 22, 46, 57, 714525)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-10-31 22:46:58,308 [INFO] Retrieved 1 active Daily user(s).
+2025-10-31 22:49:10,091 [ERROR] Failed to send email to adeboladesoyin@gmail.com: Connection unexpectedly closed
+2025-10-31 22:49:10,359 [INFO] Logged 1 email results successfully.
+2025-10-31 22:51:21,186 [ERROR] Failed to send email to adeboladesoyin@gmail.com: Connection unexpectedly closed
+2025-10-31 22:51:21,186 [INFO] Completed Daily quote send cycle successfully.
+2025-10-31 22:51:21,186 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-10-31 22:55:00,837 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 22:55:02,371 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 22:55:02,766 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Believe in your infinite potential. Your only limitations are those you set upon yourself., 2025-10-31) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'Believe in your infinite potential. Your only limitations are those you set upon yourself.', 'author': 'Roy T. Bennett', 'trans_date': datetime.datetime(2025, 10, 31, 22, 55, 2, 444918)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-10-31 22:55:04,317 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 22:55:04,605 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Believe in your infinite potential. Your only limitations are those you set upon yourself., 2025-10-31) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'Believe in your infinite potential. Your only limitations are those you set upon yourself.', 'author': 'Roy T. Bennett', 'trans_date': datetime.datetime(2025, 10, 31, 22, 55, 4, 319720)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-10-31 22:55:04,828 [INFO] Retrieved 1 active Daily user(s).
+2025-10-31 22:57:13,443 [ERROR] Failed to send email to adeboladesoyin@gmail.com: Connection unexpectedly closed
+2025-10-31 22:57:13,651 [INFO] Logged 1 email results successfully.
+2025-10-31 22:57:17,958 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-10-31 22:57:17,958 [INFO] Completed Daily quote send cycle successfully.
+2025-10-31 22:57:17,959 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-10-31 23:11:57,657 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 23:12:00,794 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 23:12:01,195 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Believe in your infinite potential. Your only limitations are those you set upon yourself., 2025-10-31) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'Believe in your infinite potential. Your only limitations are those you set upon yourself.', 'author': 'Roy T. Bennett', 'trans_date': datetime.datetime(2025, 10, 31, 23, 12, 0, 882957)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-10-31 23:12:02,792 [INFO] Fetched successfully: "Believe in your infinite potential. Your only limitations are those you set upon yourself." — Roy T. Bennett
+2025-10-31 23:12:03,088 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Believe in your infinite potential. Your only limitations are those you set upon yourself., 2025-10-31) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'Believe in your infinite potential. Your only limitations are those you set upon yourself.', 'author': 'Roy T. Bennett', 'trans_date': datetime.datetime(2025, 10, 31, 23, 12, 2, 795601)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-10-31 23:12:03,285 [INFO] Retrieved 1 active Daily user(s).
+2025-10-31 23:12:10,564 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-10-31 23:12:10,770 [INFO] Logged 1 email results successfully.
+2025-10-31 23:12:16,177 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-10-31 23:12:16,177 [INFO] Completed Daily quote send cycle successfully.
+2025-10-31 23:12:16,178 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)

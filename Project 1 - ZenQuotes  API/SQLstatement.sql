@@ -1,5 +1,13 @@
+CREATE TABLE dbo.zenquote
+(
+    quote VARCHAR(500),
+    author VARCHAR(100),
+    trans_date DATE,
+    PRIMARY KEY (quote, trans_date)
+);
+
 --Created the sample table
-CREATE TABLE users (
+CREATE TABLE dbo.users (
     user_id SERIAL PRIMARY KEY,
     email_address VARCHAR(100) NOT NULL,
     name VARCHAR(100) NOT NULL,
@@ -9,7 +17,7 @@ CREATE TABLE users (
 );
 
 -- Inserted 5 sample rows
-INSERT INTO users (email_address, name, firstname, subscription_status, email_frequency_preference) VALUES
+INSERT INTO dbo.users (email_address, name, firstname, subscription_status, email_frequency_preference) VALUES
 ('adeboladesoyin@gmail.com', 'Adebola Adesoyin', 'Adebola', 'Active', 'Daily'),
 ('michael.brown@inboxbase.org', 'Michael Brown', 'Micheal', 'Inactive', 'Weekly'),
 ('lucy.smith@noreplydemo.com', 'Lucy Smith', 'Lucy', 'Active', 'Weekly'),
@@ -17,4 +25,5 @@ INSERT INTO users (email_address, name, firstname, subscription_status, email_fr
 ('emma.johnson@mailnode.org', 'Emma Johnson', 'Emma', 'Active', 'Weekly');
 
 -- Verify the data
-SELECT * FROM users;
+SELECT * FROM dbo.users;
+
