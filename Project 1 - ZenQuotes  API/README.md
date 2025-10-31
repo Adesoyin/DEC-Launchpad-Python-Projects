@@ -23,7 +23,7 @@ A sample user table was created to host the user's email address, firstname and 
 Daily quotes were sent to the users that subscribed to the daily subscription and same for weekly subscription at 7:00AM. 
 
 ## Logging & Monitoring
-Used execute_values() to bulk insert all email send results into email_log table by recording email address, firstname, frequency, quote, author, sent status, and timestamp. This would give a full send history for monitoring and analytics. Navigate to [quotes_mailer,log](quotes_mailer.log) to see log history.
+Used execute_values() to bulk insert all email send results into email_log table by recording email address, firstname, frequency, quote, author, sent status, and timestamp. This would give a full send history for monitoring and analytics. Navigate to [quotes_mailer.log](quotes_mailer.log) to see log history.
 
 Likewise, daily email stats and summary logs was sent to the admin tonote how many successful and failed emails.
 
@@ -33,13 +33,19 @@ A screenshot of email_log data
 
 ## Summary of Script Flow
 Start
-│
+
 ├─ Load environment vars and logging
+
 ├─ Fetch daily quote
+
 ├─ Save quote to DB
+
 ├─ Retrieve user list
+
 ├─ Send email to each user
+
 ├─ Log sent status in DB
+
 └─ Schedule tasks daily/weekly
 
 
