@@ -242,7 +242,7 @@ def send_quotes(frequency):
     logging.info(f"Completed {frequency} quote send cycle successfully.")
 
 #Testing now if the script works up till this stage
-send_quotes("Daily")
+#send_quotes("Daily")
 
 # Scheduler Setup
 # -----------------------------------------------------------

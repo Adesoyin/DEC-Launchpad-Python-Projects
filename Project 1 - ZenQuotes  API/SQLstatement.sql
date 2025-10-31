@@ -21,9 +21,19 @@ INSERT INTO dbo.users (email_address, name, firstname, subscription_status, emai
 ('adeboladesoyin@gmail.com', 'Adebola Adesoyin', 'Adebola', 'Active', 'Daily'),
 ('michael.brown@inboxbase.org', 'Michael Brown', 'Micheal', 'Inactive', 'Weekly'),
 ('lucy.smith@noreplydemo.com', 'Lucy Smith', 'Lucy', 'Active', 'Weekly'),
-('dadebola.adesoyin@avonhealthcare.com', 'David Adams', 'David', 'Inactive', 'Daily'),
+('solapeajiboye@gmail.com', 'Solape Ajiboye', 'Solape', 'Active', 'Daily'),
 ('emma.johnson@mailnode.org', 'Emma Johnson', 'Emma', 'Active', 'Weekly');
 
 -- Verify the data
 SELECT * FROM dbo.users;
 
+--Create email_log table
+CREATE TABLE IF NOT EXISTS email_log (
+                id SERIAL PRIMARY KEY,
+                email_address VARCHAR(120),
+                firstname VARCHAR(100),
+                frequency VARCHAR(10),
+                sent_status VARCHAR(10),
+                quote TEXT,
+                author VARCHAR(100),
+                sent_at TIMESTAMP);
