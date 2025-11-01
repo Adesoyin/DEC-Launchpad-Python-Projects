@@ -28,7 +28,7 @@ INSERT INTO dbo.users (email_address, name, firstname, subscription_status, emai
 SELECT * FROM dbo.users;
 
 --Create email_log table
-CREATE TABLE IF NOT EXISTS email_log (
+CREATE TABLE email_log (
                 id SERIAL PRIMARY KEY,
                 email_address VARCHAR(120),
                 firstname VARCHAR(100),

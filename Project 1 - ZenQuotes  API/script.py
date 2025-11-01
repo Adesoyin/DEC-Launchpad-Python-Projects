@@ -250,10 +250,5 @@ schedule.every().day.at("07:00").do(send_quotes, frequency="Daily")
 schedule.every().saturday.at("07:00").do(send_quotes, frequency="Weekly")
 logging.info("Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)")
 
-# Keep Running
-# ----------------------------------------------------------
-while True:
-    schedule.run_pending()
-    time.sleep(60)
 
 

@@ -44,9 +44,26 @@ Start
 
 ├─ Send email to each user
 
-├─ Log sent status in DB
+├─ Log sent status in DB - email_log table
+
+├─ Sends summary sent email to admin (myself)
 
 └─ Schedule tasks daily/weekly
 
+# Scheduling
+The script was scheduled using window task scheduler...
 
+Steps
+1. New task was created, title and job decription entered, ensuring it run when computer is put on
 
+![alt text](images/Creating%20Task%20Scheduler.png)
+
+2. Action specified to know task will be performed, the python extension and script path specified 
+
+![alt text](images/Task%20Action.png)
+
+3. The trigger timing and schedule settings created to run daily
+
+![alt text](images/Trigger%20creation.png)
+
+4. Saved and tested to run
