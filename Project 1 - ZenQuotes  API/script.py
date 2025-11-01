@@ -8,7 +8,7 @@ from email.mime.text import MIMEText #to send HTML email
 from email.mime.multipart import MIMEMultipart #to send HTML email with multiple parts
 from datetime import datetime
 import psycopg2 #to connect to PostgreSQL database
-from psycopg2.extras import execute_values #to insert multiple records into the database
+from psycopg2.extras import execute_values #a function to insert multiple records into the database
 import pandas as pd
 from sqlalchemy import create_engine #to create a database engine for connecting to the database
 import os
@@ -16,7 +16,7 @@ from dotenv import load_dotenv
 
 
 # Creating Log file
-# Logging library to log events that happen during execution
+# Logging library would help to log events that happen during execution
 # ----------------------------------------------------------
 logging.basicConfig(
     filename="quotes_mailer.log",
@@ -50,22 +50,23 @@ def get_daily_quote(retries=2, delay=3):
             quote = data[0]['q']
             author = data[0]['a']
             trans_date = datetime.now()
+            logging.info("============================================")
             logging.info(f"Fetched successfully: \"{quote}\" — {author}")
             return quote, author
         except Exception as e:
+            logging.info("============================================")
             logging.warning(f"Attempt {attempt} failed fetching quote: {e}")
             time.sleep(delay)
     logging.error("All retries failed fetching the quote.")
     return None, None
 
-print(get_daily_quote())
+# print(get_daily_quote())
 
 # Writing Quote to Database
 # ----------------------------------------------------------
 def save_quote_to_db(quote, author):
     try:
-        engine = create_engine(
-            f'postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}' )
+        engine = create_engine(f'postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}' )
         # Prepare data
         current_date = datetime.now()
         zenquotes = pd.DataFrame(
@@ -103,7 +104,7 @@ def get_connection():
         password=DB_PASSWORD,
         host=DB_HOST,
         port=DB_PORT,
-        dbname=DB_NAME,
+        dbname=DB_NAME
     )
 
 
@@ -124,7 +125,7 @@ def get_users(frequency):
         logging.info(f"Retrieved {len(users)} active {frequency} user(s).")
         return users
     except Exception as e:
-        logging.error(f"Database query failed: {e}")
+        logging.error(f"Database users query failed: {e}")
         return []
 
 
@@ -178,7 +179,7 @@ def log_email_status(records):
                 """
                 execute_values(cur, insert_query, records)
                 conn.commit()
-        logging.info(f"Logged {len(records)} email results successfully.")
+        logging.info(f"Logged {len(records)} email results successfully into email_log table.")
     except Exception as e:
         logging.error(f"Failed to insert email logs: {e}")
 
@@ -229,7 +230,7 @@ def send_quotes(frequency):
         subject = f"Your {frequency} Quote ✨"
         body = f"""
         <html>
-        <body style="font-family:Century Gothic, Arial, sans-serif; color:#333; font-size:14px;">
+        <body style="font-family:Century Gothic, Arial; color:#333; font-size:14px;">
             <p>Dear {firstname},</p>
             <p style="font-style:italic; color:#555;">"{quote}"</p>
             <p style="margin-bottom:20px;">— {author}</p>
@@ -254,7 +255,7 @@ def send_quotes(frequency):
 
 #Testing now if the script works up till this stage
 send_quotes("Daily")
-send_quotes("Weekly")
+# send_quotes("Weekly")
 
 # Scheduler Setup
 # -----------------------------------------------------------
