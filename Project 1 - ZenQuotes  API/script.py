@@ -1,21 +1,22 @@
 #!/usr/bin/env python
-import requests
+import requests #to make API requests
 import schedule
 import time
-import smtplib
+import smtplib #simple mail transfer protocol library
 import logging
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText #to send HTML email
+from email.mime.multipart import MIMEMultipart #to send HTML email with multiple parts
 from datetime import datetime
-import psycopg2
-from psycopg2.extras import execute_values
+import psycopg2 #to connect to PostgreSQL database
+from psycopg2.extras import execute_values #to insert multiple records into the database
 import pandas as pd
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine #to create a database engine for connecting to the database
 import os
 from dotenv import load_dotenv
 
 
-# Logging Setup
+# Creating Log file
+# Logging library to log events that happen during execution
 # ----------------------------------------------------------
 logging.basicConfig(
     filename="quotes_mailer.log",
@@ -44,7 +45,7 @@ def get_daily_quote(retries=2, delay=3):
     for attempt in range(1, retries + 1):
         try:
             response = requests.get(url, timeout=15)
-            #response.raise_for_status()
+            
             data = response.json()
             quote = data[0]['q']
             author = data[0]['a']
@@ -136,9 +137,19 @@ def send_email(recipient, subject, body):
     msg["Subject"] = subject
     msg.attach(MIMEText(body, "html"))
 
+
+#with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=20) as server:
+#    server.login(SENDER_EMAIL, SENDER_PASSWORD)
+#    server.send_message(msg)
+
+#with smtplib.SMTP("smtp.gmail.com", 587, timeout=30) as server:
+#            server.starttls()
+#            server.login(SENDER_EMAIL, SENDER_PASSWORD)
+#            server.send_message(msg)
+
     try:
-        with smtplib.SMTP("smtp.gmail.com", 587) as server:
-            server.starttls()
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=20) as server:
+            #server.starttls()
             server.login(SENDER_EMAIL, SENDER_PASSWORD)
             server.send_message(msg)
         logging.info(f"Email sent successfully to {recipient}")
@@ -242,13 +253,15 @@ def send_quotes(frequency):
     logging.info(f"Completed {frequency} quote send cycle successfully.")
 
 #Testing now if the script works up till this stage
-#send_quotes("Daily")
+send_quotes("Daily")
+send_quotes("Weekly")
 
 # Scheduler Setup
 # -----------------------------------------------------------
 schedule.every().day.at("07:00").do(send_quotes, frequency="Daily")
 schedule.every().saturday.at("07:00").do(send_quotes, frequency="Weekly")
 logging.info("Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)")
+
 
 
 

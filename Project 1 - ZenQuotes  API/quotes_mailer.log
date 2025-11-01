@@ -144,12 +144,12 @@ DETAIL:  Key (quote, trans_date)=(Believe in your infinite potential. Your only 
 2025-10-31 23:12:16,177 [INFO] Email sent successfully to adeboladesoyin@gmail.com
 2025-10-31 23:12:16,177 [INFO] Completed Daily quote send cycle successfully.
 2025-10-31 23:12:16,178 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
-2025-11-01 08:13:54,179 [INFO] Fetched successfully: "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  " — Jack Kerouac
-2025-11-01 08:13:56,328 [INFO] Fetched successfully: "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  " — Jack Kerouac
+2025-11-01 08:13:54,179 [INFO] Fetched successfully: "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  " ï¿½ Jack Kerouac
+2025-11-01 08:13:56,328 [INFO] Fetched successfully: "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  " ï¿½ Jack Kerouac
 2025-11-01 08:13:57,515 [INFO] Quote successfully inserted into zenquote table.
 2025-11-01 08:13:57,517 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
-2025-11-01 08:34:03,321 [INFO] Fetched successfully: "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  " — Jack Kerouac
-2025-11-01 08:34:05,169 [INFO] Fetched successfully: "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  " — Jack Kerouac
+2025-11-01 08:34:03,321 [INFO] Fetched successfully: "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  " ï¿½ Jack Kerouac
+2025-11-01 08:34:05,169 [INFO] Fetched successfully: "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  " ï¿½ Jack Kerouac
 2025-11-01 08:34:05,679 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
 DETAIL:  Key (quote, trans_date)=(Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  , 2025-11-01) already exists.
 
@@ -157,3 +157,115 @@ DETAIL:  Key (quote, trans_date)=(Life must be rich and full of loving-it's no g
 [parameters: {'quote': "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  ", 'author': 'Jack Kerouac', 'trans_date': datetime.datetime(2025, 11, 1, 8, 34, 5, 306699)}]
 (Background on this error at: https://sqlalche.me/e/20/gkpj)
 2025-11-01 08:34:05,681 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+
+2025-11-01 09:17:23,117 [INFO] Fetched successfully: "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  " ï¿½ Jack Kerouac
+2025-11-01 09:17:25,164 [INFO] Fetched successfully: "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  " ï¿½ Jack Kerouac
+2025-11-01 09:17:25,892 [INFO] Quote successfully inserted into zenquote table.
+2025-11-01 09:17:27,724 [INFO] Fetched successfully: "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  " ï¿½ Jack Kerouac
+2025-11-01 09:17:28,230 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  , 2025-11-01) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  ", 'author': 'Jack Kerouac', 'trans_date': datetime.datetime(2025, 11, 1, 9, 17, 27, 728580)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-01 09:17:28,540 [INFO] Retrieved 2 active Daily user(s).
+2025-11-01 09:17:49,733 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-11-01 09:18:10,786 [ERROR] Failed to send email to solapeajiboye@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-11-01 09:18:11,109 [INFO] Logged 2 email results successfully.
+2025-11-01 09:18:32,150 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-11-01 09:18:32,150 [INFO] Completed Daily quote send cycle successfully.
+2025-11-01 09:18:32,151 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-11-01 09:19:30,299 [INFO] Fetched successfully: "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  " ï¿½ Jack Kerouac
+2025-11-01 09:19:32,448 [INFO] Fetched successfully: "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  " ï¿½ Jack Kerouac
+2025-11-01 09:19:33,152 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  , 2025-11-01) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  ", 'author': 'Jack Kerouac', 'trans_date': datetime.datetime(2025, 11, 1, 9, 19, 32, 625313)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-01 09:19:35,622 [INFO] Fetched successfully: "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  " ï¿½ Jack Kerouac
+2025-11-01 09:19:36,059 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  , 2025-11-01) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  ", 'author': 'Jack Kerouac', 'trans_date': datetime.datetime(2025, 11, 1, 9, 19, 35, 624884)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-01 09:19:36,397 [INFO] Retrieved 2 active Daily user(s).
+2025-11-01 09:19:57,579 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-11-01 09:20:18,618 [ERROR] Failed to send email to solapeajiboye@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-11-01 09:20:18,900 [INFO] Logged 2 email results successfully.
+2025-11-01 09:20:39,943 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-11-01 09:20:39,943 [INFO] Completed Daily quote send cycle successfully.
+2025-11-01 09:20:39,945 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-11-01 09:30:19,002 [INFO] Fetched successfully: "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  " ï¿½ Jack Kerouac
+2025-11-01 09:30:20,910 [INFO] Fetched successfully: "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  " ï¿½ Jack Kerouac
+2025-11-01 09:30:21,580 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  , 2025-11-01) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  ", 'author': 'Jack Kerouac', 'trans_date': datetime.datetime(2025, 11, 1, 9, 30, 21, 49119)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-01 09:30:23,405 [INFO] Fetched successfully: "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  " ï¿½ Jack Kerouac
+2025-11-01 09:30:23,698 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  , 2025-11-01) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  ", 'author': 'Jack Kerouac', 'trans_date': datetime.datetime(2025, 11, 1, 9, 30, 23, 407949)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-01 09:30:23,936 [INFO] Retrieved 2 active Daily user(s).
+2025-11-01 09:30:45,065 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-11-01 09:31:06,143 [ERROR] Failed to send email to solapeajiboye@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-11-01 09:31:06,409 [INFO] Logged 2 email results successfully.
+2025-11-01 09:31:27,447 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-11-01 09:31:27,448 [INFO] Completed Daily quote send cycle successfully.
+2025-11-01 09:31:29,629 [INFO] Fetched successfully: "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  " ï¿½ Jack Kerouac
+2025-11-01 09:31:29,916 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  , 2025-11-01) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  ", 'author': 'Jack Kerouac', 'trans_date': datetime.datetime(2025, 11, 1, 9, 31, 29, 632635)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-01 09:31:30,142 [INFO] Retrieved 3 active Weekly user(s).
+2025-11-01 09:31:51,237 [ERROR] Failed to send email to lucy.smith@noreplydemo.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-11-01 09:32:12,393 [ERROR] Failed to send email to dadebola.adesoyin@avonhealthcare.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-11-01 09:32:33,506 [ERROR] Failed to send email to emma.johnson@mailnode.org: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-11-01 09:32:33,853 [INFO] Logged 3 email results successfully.
+2025-11-01 09:32:54,934 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-11-01 09:32:54,935 [INFO] Completed Weekly quote send cycle successfully.
+2025-11-01 09:32:54,937 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-11-01 09:38:33,713 [INFO] Fetched successfully: "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  " ï¿½ Jack Kerouac
+2025-11-01 09:38:35,554 [INFO] Fetched successfully: "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  " ï¿½ Jack Kerouac
+2025-11-01 09:38:35,953 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  , 2025-11-01) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  ", 'author': 'Jack Kerouac', 'trans_date': datetime.datetime(2025, 11, 1, 9, 38, 35, 637159)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-01 09:38:37,709 [INFO] Fetched successfully: "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  " ï¿½ Jack Kerouac
+2025-11-01 09:38:37,972 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  , 2025-11-01) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  ", 'author': 'Jack Kerouac', 'trans_date': datetime.datetime(2025, 11, 1, 9, 38, 37, 711880)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-01 09:38:38,197 [INFO] Retrieved 2 active Daily user(s).
+2025-11-01 09:38:42,605 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-11-01 09:38:46,394 [INFO] Email sent successfully to solapeajiboye@gmail.com
+2025-11-01 09:38:46,755 [INFO] Logged 2 email results successfully.
+2025-11-01 09:38:50,900 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-11-01 09:38:50,901 [INFO] Completed Daily quote send cycle successfully.
+2025-11-01 09:38:52,743 [INFO] Fetched successfully: "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  " ï¿½ Jack Kerouac
+2025-11-01 09:38:53,118 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  , 2025-11-01) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': "Life must be rich and full of loving-it's no good otherwise, no good at all, for anyone.  ", 'author': 'Jack Kerouac', 'trans_date': datetime.datetime(2025, 11, 1, 9, 38, 52, 746489)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-01 09:38:53,407 [INFO] Retrieved 3 active Weekly user(s).
+2025-11-01 09:38:57,155 [INFO] Email sent successfully to lucy.smith@noreplydemo.com
+2025-11-01 09:39:01,140 [INFO] Email sent successfully to dadebola.adesoyin@avonhealthcare.com
+2025-11-01 09:39:05,030 [INFO] Email sent successfully to emma.johnson@mailnode.org
+2025-11-01 09:39:05,392 [INFO] Logged 3 email results successfully.
+2025-11-01 09:39:09,874 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-11-01 09:39:09,875 [INFO] Completed Weekly quote send cycle successfully.
+2025-11-01 09:39:09,876 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
