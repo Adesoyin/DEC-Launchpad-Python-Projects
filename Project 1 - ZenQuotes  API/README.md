@@ -1,4 +1,4 @@
-# DEC-Launchpad-Python-Projects
+# DEC-Launchpad-ZenQuotes API Python Project
 
 This project tested my data engineering and automation skills in building an automated quote email delivery platform for MindFuel, a mental wellness startup.
 
@@ -71,7 +71,7 @@ Switching to SSL (port 465) resolved the problem, and email sending worked corre
 
 ## Logging & Monitoring
 
-The script.py maintains full logs of operations:
+The `script.py` maintains full logs of operations:
 
 Application logs are saved in [quotes_mailer.log](quotes_mailer.log), showing daily activities, retries, and email status.
 
