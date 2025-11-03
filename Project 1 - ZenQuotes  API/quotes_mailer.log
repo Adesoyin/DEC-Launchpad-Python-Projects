@@ -269,3 +269,34 @@ DETAIL:  Key (quote, trans_date)=(Life must be rich and full of loving-it's no g
 2025-11-01 09:39:09,874 [INFO] Email sent successfully to adeboladesoyin@gmail.com
 2025-11-01 09:39:09,875 [INFO] Completed Weekly quote send cycle successfully.
 2025-11-01 09:39:09,876 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-11-03 08:33:29,190 [INFO] ============================================
+2025-11-03 08:33:29,192 [WARNING] Attempt 1 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002CC661086E0>: Failed to resolve 'zenquotes.io' ([Errno 11002] getaddrinfo failed)"))
+2025-11-03 08:33:32,194 [INFO] ============================================
+2025-11-03 08:33:32,195 [WARNING] Attempt 2 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002CC6606FC50>: Failed to resolve 'zenquotes.io' ([Errno 11002] getaddrinfo failed)"))
+2025-11-03 08:33:35,196 [ERROR] All retries failed fetching the quote.
+2025-11-03 08:33:35,196 [WARNING] No quote retrieved — skipping database insert.
+2025-11-03 08:33:35,318 [INFO] ============================================
+2025-11-03 08:33:35,318 [WARNING] Attempt 1 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002CC6611C690>: Failed to resolve 'zenquotes.io' ([Errno 11002] getaddrinfo failed)"))
+2025-11-03 08:33:38,322 [INFO] ============================================
+2025-11-03 08:33:38,323 [WARNING] Attempt 2 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002CC6611C910>: Failed to resolve 'zenquotes.io' ([Errno 11002] getaddrinfo failed)"))
+2025-11-03 08:33:41,324 [ERROR] All retries failed fetching the quote.
+2025-11-03 08:33:41,324 [ERROR] No quote retrieved; skipping email send.
+2025-11-03 08:33:41,324 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-11-03 08:45:56,984 [INFO] ============================================
+2025-11-03 08:45:57,026 [INFO] Fetched successfully: "The purpose of life is the life of purpose." — Robin Sharma
+2025-11-03 08:45:58,471 [INFO] Quote successfully inserted into zenquote table.
+2025-11-03 08:46:00,193 [INFO] ============================================
+2025-11-03 08:46:00,194 [INFO] Fetched successfully: "The purpose of life is the life of purpose." — Robin Sharma
+2025-11-03 08:46:00,712 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(The purpose of life is the life of purpose., 2025-11-03) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'The purpose of life is the life of purpose.', 'author': 'Robin Sharma', 'trans_date': datetime.datetime(2025, 11, 3, 8, 46, 0, 196582)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-03 08:46:01,049 [INFO] Retrieved 2 active Daily user(s).
+2025-11-03 08:46:04,048 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-11-03 08:46:06,826 [INFO] Email sent successfully to solapeajiboye@gmail.com
+2025-11-03 08:46:07,198 [INFO] Logged 2 email results successfully into email_log table.
+2025-11-03 08:46:11,113 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-11-03 08:46:11,115 [INFO] Completed Daily quote send cycle successfully.
+2025-11-03 08:46:11,115 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
