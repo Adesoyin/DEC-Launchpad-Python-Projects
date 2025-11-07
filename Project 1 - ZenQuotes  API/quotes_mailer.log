@@ -274,7 +274,7 @@ DETAIL:  Key (quote, trans_date)=(Life must be rich and full of loving-it's no g
 2025-11-03 08:33:32,194 [INFO] ============================================
 2025-11-03 08:33:32,195 [WARNING] Attempt 2 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002CC6606FC50>: Failed to resolve 'zenquotes.io' ([Errno 11002] getaddrinfo failed)"))
 2025-11-03 08:33:35,196 [ERROR] All retries failed fetching the quote.
-2025-11-03 08:33:35,196 [WARNING] No quote retrieved — skipping database insert.
+2025-11-03 08:33:35,196 [WARNING] No quote retrieved ï¿½ skipping database insert.
 2025-11-03 08:33:35,318 [INFO] ============================================
 2025-11-03 08:33:35,318 [WARNING] Attempt 1 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002CC6611C690>: Failed to resolve 'zenquotes.io' ([Errno 11002] getaddrinfo failed)"))
 2025-11-03 08:33:38,322 [INFO] ============================================
@@ -283,10 +283,10 @@ DETAIL:  Key (quote, trans_date)=(Life must be rich and full of loving-it's no g
 2025-11-03 08:33:41,324 [ERROR] No quote retrieved; skipping email send.
 2025-11-03 08:33:41,324 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
 2025-11-03 08:45:56,984 [INFO] ============================================
-2025-11-03 08:45:57,026 [INFO] Fetched successfully: "The purpose of life is the life of purpose." — Robin Sharma
+2025-11-03 08:45:57,026 [INFO] Fetched successfully: "The purpose of life is the life of purpose." ï¿½ Robin Sharma
 2025-11-03 08:45:58,471 [INFO] Quote successfully inserted into zenquote table.
 2025-11-03 08:46:00,193 [INFO] ============================================
-2025-11-03 08:46:00,194 [INFO] Fetched successfully: "The purpose of life is the life of purpose." — Robin Sharma
+2025-11-03 08:46:00,194 [INFO] Fetched successfully: "The purpose of life is the life of purpose." ï¿½ Robin Sharma
 2025-11-03 08:46:00,712 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
 DETAIL:  Key (quote, trans_date)=(The purpose of life is the life of purpose., 2025-11-03) already exists.
 
@@ -300,3 +300,93 @@ DETAIL:  Key (quote, trans_date)=(The purpose of life is the life of purpose., 2
 2025-11-03 08:46:11,113 [INFO] Email sent successfully to adeboladesoyin@gmail.com
 2025-11-03 08:46:11,115 [INFO] Completed Daily quote send cycle successfully.
 2025-11-03 08:46:11,115 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-11-04 08:37:14,897 [INFO] ============================================
+2025-11-04 08:37:14,940 [INFO] Fetched successfully: "Never let the fear of striking out keep you from playing the game." — Babe Ruth
+2025-11-04 08:37:15,860 [INFO] Quote successfully inserted into zenquote table.
+2025-11-04 08:37:17,790 [INFO] ============================================
+2025-11-04 08:37:17,791 [INFO] Fetched successfully: "Never let the fear of striking out keep you from playing the game." — Babe Ruth
+2025-11-04 08:37:18,177 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Never let the fear of striking out keep you from playing the game., 2025-11-04) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'Never let the fear of striking out keep you from playing the game.', 'author': 'Babe Ruth', 'trans_date': datetime.datetime(2025, 11, 4, 8, 37, 17, 794321)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-04 08:37:18,445 [INFO] Retrieved 2 active Daily user(s).
+2025-11-04 08:37:21,988 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-11-04 08:37:25,879 [INFO] Email sent successfully to nwaekwudavid@gmail.com
+2025-11-04 08:37:26,115 [INFO] Logged 2 email results successfully into email_log table.
+2025-11-04 08:37:29,872 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-11-04 08:37:29,874 [INFO] Completed Daily quote send cycle successfully.
+2025-11-04 08:37:29,874 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-11-06 08:00:17,118 [INFO] ============================================
+2025-11-06 08:00:17,120 [WARNING] Attempt 1 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002868BC786E0>: Failed to resolve 'zenquotes.io' ([Errno 11002] getaddrinfo failed)"))
+2025-11-06 08:00:20,124 [INFO] ============================================
+2025-11-06 08:00:20,125 [WARNING] Attempt 2 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002868BBDFC50>: Failed to resolve 'zenquotes.io' ([Errno 11002] getaddrinfo failed)"))
+2025-11-06 08:00:23,125 [ERROR] All retries failed fetching the quote.
+2025-11-06 08:00:23,126 [WARNING] No quote retrieved — skipping database insert.
+2025-11-06 08:00:23,263 [INFO] ============================================
+2025-11-06 08:00:23,264 [WARNING] Attempt 1 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002868BC8C690>: Failed to resolve 'zenquotes.io' ([Errno 11002] getaddrinfo failed)"))
+2025-11-06 08:00:26,266 [INFO] ============================================
+2025-11-06 08:00:26,266 [WARNING] Attempt 2 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002868BC8C910>: Failed to resolve 'zenquotes.io' ([Errno 11002] getaddrinfo failed)"))
+2025-11-06 08:00:29,267 [ERROR] All retries failed fetching the quote.
+2025-11-06 08:00:29,267 [ERROR] No quote retrieved; skipping email send.
+2025-11-06 08:00:29,268 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-11-07 08:05:55,477 [INFO] ============================================
+2025-11-07 08:05:55,478 [INFO] Fetched successfully: "He who knows best knows how little he knows." — Thomas Jefferson
+2025-11-07 08:05:56,553 [INFO] Quote successfully inserted into zenquote table.
+2025-11-07 08:05:58,446 [INFO] ============================================
+2025-11-07 08:05:58,446 [INFO] Fetched successfully: "He who knows best knows how little he knows." — Thomas Jefferson
+2025-11-07 08:05:58,863 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(He who knows best knows how little he knows., 2025-11-07) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'He who knows best knows how little he knows.', 'author': 'Thomas Jefferson', 'trans_date': datetime.datetime(2025, 11, 7, 8, 5, 58, 449202)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-07 08:05:59,165 [INFO] Retrieved 1 active Daily user(s).
+2025-11-07 08:06:07,402 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-11-07 08:06:07,665 [INFO] Logged 1 email results successfully into email_log table.
+2025-11-07 08:06:10,151 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-11-07 08:06:10,151 [INFO] Completed Daily quote send cycle successfully.
+2025-11-07 08:06:10,152 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-11-07 08:09:16,284 [INFO] ============================================
+2025-11-07 08:09:16,285 [INFO] Fetched successfully: "He who knows best knows how little he knows." — Thomas Jefferson
+2025-11-07 08:09:16,871 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(He who knows best knows how little he knows., 2025-11-07) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'He who knows best knows how little he knows.', 'author': 'Thomas Jefferson', 'trans_date': datetime.datetime(2025, 11, 7, 8, 9, 16, 430777)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-07 08:09:18,946 [INFO] ============================================
+2025-11-07 08:09:18,947 [INFO] Fetched successfully: "He who knows best knows how little he knows." — Thomas Jefferson
+2025-11-07 08:09:19,265 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(He who knows best knows how little he knows., 2025-11-07) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'He who knows best knows how little he knows.', 'author': 'Thomas Jefferson', 'trans_date': datetime.datetime(2025, 11, 7, 8, 9, 18, 949993)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-07 08:09:19,522 [INFO] Retrieved 1 active Daily user(s).
+2025-11-07 08:09:22,634 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-11-07 08:09:22,850 [INFO] Logged 1 email results successfully into email_log table.
+2025-11-07 08:09:25,721 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-11-07 08:09:25,721 [INFO] Completed Daily quote send cycle successfully.
+2025-11-07 08:09:25,722 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-11-07 13:59:22,380 [INFO] ============================================
+2025-11-07 13:59:22,382 [WARNING] Attempt 1 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000181A256C6E0>: Failed to resolve 'zenquotes.io' ([Errno 11002] getaddrinfo failed)"))
+2025-11-07 13:59:25,384 [INFO] ============================================
+2025-11-07 13:59:25,384 [WARNING] Attempt 2 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000181A24CBC50>: Failed to resolve 'zenquotes.io' ([Errno 11002] getaddrinfo failed)"))
+2025-11-07 13:59:28,385 [ERROR] All retries failed fetching the quote.
+2025-11-07 13:59:28,386 [WARNING] No quote retrieved — skipping database insert.
+2025-11-07 13:59:30,312 [INFO] ============================================
+2025-11-07 13:59:30,313 [INFO] Fetched successfully: "He who knows best knows how little he knows." — Thomas Jefferson
+2025-11-07 13:59:30,736 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(He who knows best knows how little he knows., 2025-11-07) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'He who knows best knows how little he knows.', 'author': 'Thomas Jefferson', 'trans_date': datetime.datetime(2025, 11, 7, 13, 59, 30, 482087)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-07 13:59:30,835 [INFO] Retrieved 1 active Daily user(s).
+2025-11-07 13:59:33,961 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-11-07 13:59:34,064 [INFO] Logged 1 email results successfully into email_log table.
+2025-11-07 13:59:36,903 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-11-07 13:59:36,904 [INFO] Completed Daily quote send cycle successfully.
+2025-11-07 13:59:36,904 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)

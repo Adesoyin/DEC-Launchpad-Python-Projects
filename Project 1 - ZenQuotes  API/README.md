@@ -16,6 +16,7 @@ The system fetches daily inspirational quotes from the ZenQuotes API, stores the
 
 ## System Architecture
 Start
+
 ├─ Load environment variables & initialize logging
 
 ├─ Fetch daily quote from ZenQuotes API
