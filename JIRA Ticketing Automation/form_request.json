@@ -1,0 +1,456 @@
+{
+    "id": "336bb096-c808-465b-a5f1-c4fb2de738d5",
+    "updated": "2025-11-08T19:44:13.836Z",
+    "design": {
+        "conditions": {
+            "207": {
+                "i": {
+                    "co": {
+                        "cIds": {
+                            "205": [
+                                "183"
+                            ]
+                        }
+                    }
+                },
+                "o": {
+                    "sIds": [
+                        "1"
+                    ],
+                    "t": "sh"
+                }
+            }
+        },
+        "layout": [
+            {
+                "version": 1,
+                "type": "doc",
+                "content": [
+                    {
+                        "type": "heading",
+                        "attrs": {
+                            "level": 2,
+                            "localId": "a9fee306-84e4-4468-be21-0692ff382104"
+                        },
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "Person making request"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "layoutSection",
+                        "content": [
+                            {
+                                "type": "layoutColumn",
+                                "attrs": {
+                                    "width": 50
+                                },
+                                "content": [
+                                    {
+                                        "type": "extension",
+                                        "attrs": {
+                                            "extensionKey": "question",
+                                            "extensionType": "com.thinktilt.proforma",
+                                            "parameters": {
+                                                "id": 199
+                                            },
+                                            "layout": "default",
+                                            "localId": "70b85b76-12f0-44d2-9812-76d3e226cb87"
+                                        }
+                                    },
+                                    {
+                                        "type": "extension",
+                                        "attrs": {
+                                            "extensionKey": "question",
+                                            "extensionType": "com.thinktilt.proforma",
+                                            "parameters": {
+                                                "id": 201
+                                            },
+                                            "layout": "default",
+                                            "localId": "5306d09a-2d88-48f8-a5ba-910a8cbfae96"
+                                        }
+                                    },
+                                    {
+                                        "type": "extension",
+                                        "attrs": {
+                                            "extensionKey": "question",
+                                            "extensionType": "com.thinktilt.proforma",
+                                            "parameters": {
+                                                "id": 203
+                                            },
+                                            "layout": "default",
+                                            "localId": "6cdeaecf-64ab-4ca9-ba1e-4c442bc4e7b5"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "layoutColumn",
+                                "attrs": {
+                                    "width": 50
+                                },
+                                "content": [
+                                    {
+                                        "type": "extension",
+                                        "attrs": {
+                                            "extensionKey": "question",
+                                            "extensionType": "com.thinktilt.proforma",
+                                            "parameters": {
+                                                "id": 200
+                                            },
+                                            "layout": "default",
+                                            "localId": "13252ab4-5e62-4e35-85a5-4a02e2930848"
+                                        }
+                                    },
+                                    {
+                                        "type": "extension",
+                                        "attrs": {
+                                            "extensionKey": "question",
+                                            "extensionType": "com.thinktilt.proforma",
+                                            "parameters": {
+                                                "id": 202
+                                            },
+                                            "layout": "default",
+                                            "localId": "4e6eb85a-fcde-4d37-ab1e-c7b2204c39fa"
+                                        }
+                                    },
+                                    {
+                                        "type": "extension",
+                                        "attrs": {
+                                            "extensionKey": "question",
+                                            "extensionType": "com.thinktilt.proforma",
+                                            "parameters": {
+                                                "id": 204
+                                            },
+                                            "layout": "default",
+                                            "localId": "cdbdbb26-c250-41ff-8ee4-3c477d2509a0"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "heading",
+                        "attrs": {
+                            "level": 2,
+                            "localId": "6e3b77a1-4d42-4a8d-9b5b-3a455f292edf"
+                        },
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "Telephone lines and installations"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "extension",
+                        "attrs": {
+                            "extensionKey": "question",
+                            "extensionType": "com.thinktilt.proforma",
+                            "parameters": {
+                                "id": 157
+                            },
+                            "layout": "default",
+                            "localId": "193d63c4-0edf-4013-b9bc-d632c410167c"
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "attrs": {
+                            "level": 2,
+                            "localId": "c6dbe0c7-e7c0-40e9-b37c-c88311b4a62a"
+                        },
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "Handsets and Headsets"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "extension",
+                        "attrs": {
+                            "extensionKey": "question",
+                            "extensionType": "com.thinktilt.proforma",
+                            "parameters": {
+                                "id": 159
+                            },
+                            "layout": "default",
+                            "localId": "3641c5f4-4432-4532-8f3e-b68b0d3239dc"
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "attrs": {
+                            "level": 2,
+                            "localId": "5b46f1ef-4ac1-49df-a509-f67bce5a167e"
+                        },
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "Time frame"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "layoutSection",
+                        "content": [
+                            {
+                                "type": "layoutColumn",
+                                "attrs": {
+                                    "width": 50
+                                },
+                                "content": [
+                                    {
+                                        "type": "extension",
+                                        "attrs": {
+                                            "extensionKey": "question",
+                                            "extensionType": "com.thinktilt.proforma",
+                                            "parameters": {
+                                                "id": 205
+                                            },
+                                            "layout": "default",
+                                            "localId": "a1697997-aa0a-4322-b267-39ea808adb4b"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "layoutColumn",
+                                "attrs": {
+                                    "width": 50
+                                },
+                                "content": [
+                                    {
+                                        "type": "extension",
+                                        "attrs": {
+                                            "extensionKey": "question",
+                                            "extensionType": "com.thinktilt.proforma",
+                                            "parameters": {
+                                                "id": 206
+                                            },
+                                            "layout": "default",
+                                            "localId": "356d7bdf-90b1-45ff-8ae5-8ed6710bfb47"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "version": 1,
+                "type": "doc",
+                "content": [
+                    {
+                        "type": "extension",
+                        "attrs": {
+                            "extensionKey": "question",
+                            "extensionType": "com.thinktilt.proforma",
+                            "parameters": {
+                                "id": 197
+                            },
+                            "layout": "default",
+                            "localId": "1182136c-b76e-4a2b-8e8d-590c63268530"
+                        }
+                    }
+                ]
+            },
+            {
+                "version": 1,
+                "type": "doc",
+                "content": [
+                    {
+                        "type": "extension",
+                        "attrs": {
+                            "extensionKey": "question",
+                            "extensionType": "com.thinktilt.proforma",
+                            "parameters": {
+                                "id": 189
+                            },
+                            "layout": "default",
+                            "localId": "7945d18b-212b-49b2-9ade-0f1072377ce2"
+                        }
+                    }
+                ]
+            }
+        ],
+        "questions": {
+            "205": {
+                "choices": [
+                    {
+                        "id": "183",
+                        "label": "Temporary use (three months or less)"
+                    },
+                    {
+                        "id": "184",
+                        "label": "Permanent use"
+                    }
+                ],
+                "label": "This equipment is for ",
+                "type": "cs",
+                "validation": {}
+            },
+            "206": {
+                "label": "Date needed by",
+                "type": "da",
+                "validation": {}
+            },
+            "202": {
+                "choices": [],
+                "description": "",
+                "label": " Email",
+                "questionKey": "",
+                "type": "te",
+                "validation": {
+                    "rq": false
+                }
+            },
+            "203": {
+                "label": "Department",
+                "type": "ts",
+                "validation": {}
+            },
+            "189": {
+                "label": "Comments",
+                "type": "pg",
+                "validation": {}
+            },
+            "204": {
+                "label": "Cost center (acct #)",
+                "type": "ts",
+                "validation": {}
+            },
+            "200": {
+                "label": "Job title",
+                "type": "ts",
+                "validation": {}
+            },
+            "157": {
+                "choices": [
+                    {
+                        "id": "160",
+                        "label": "New extension including new cabling and socket"
+                    },
+                    {
+                        "id": "161",
+                        "label": "New extension to an existing, inactive socket"
+                    },
+                    {
+                        "id": "182",
+                        "label": "Relocate existing to a new location "
+                    },
+                    {
+                        "id": "190",
+                        "label": "Convert existing extension from analogue to digital"
+                    },
+                    {
+                        "id": "191",
+                        "label": "Relocate an existing extension to an existing inactive, socket"
+                    },
+                    {
+                        "id": "192",
+                        "label": "Swap of telephone extensions"
+                    },
+                    {
+                        "id": "0",
+                        "label": "Other...",
+                        "other": true
+                    }
+                ],
+                "label": "Installation requested",
+                "type": "cs",
+                "validation": {}
+            },
+            "201": {
+                "label": "Phone",
+                "type": "ts",
+                "validation": {}
+            },
+            "197": {
+                "choices": [],
+                "description": "",
+                "label": "Approximate ending date",
+                "questionKey": "",
+                "type": "da",
+                "validation": {
+                    "rq": false
+                }
+            },
+            "199": {
+                "label": "Name",
+                "type": "ts",
+                "validation": {}
+            },
+            "159": {
+                "choices": [
+                    {
+                        "id": "164",
+                        "label": "Handset speaker phone"
+                    },
+                    {
+                        "id": "165",
+                        "label": "Cordless headset"
+                    },
+                    {
+                        "id": "166",
+                        "label": "Cordless handset"
+                    },
+                    {
+                        "id": "167",
+                        "label": "Mobile phone"
+                    },
+                    {
+                        "id": "168",
+                        "label": "Smartphone"
+                    },
+                    {
+                        "id": "194",
+                        "label": "SIM card only"
+                    },
+                    {
+                        "id": "0",
+                        "label": "Other...",
+                        "other": true
+                    }
+                ],
+                "label": "Equipment requested",
+                "type": "cm",
+                "validation": {}
+            }
+        },
+        "sections": {
+            "1": {
+                "sectionType": "b",
+                "name": "Temporary",
+                "conditions": [
+                    "207"
+                ]
+            },
+            "2": {
+                "sectionType": "b",
+                "conditions": []
+            }
+        },
+        "settings": {
+            "name": "Phone equipment order",
+            "submit": {
+                "lock": false,
+                "pdf": false
+            },
+            "primaryLocale": "en-US",
+            "translatedLocale": "en-US"
+        }
+    },
+    "publish": {
+        "portalRequestTypeIds": [
+            10010
+        ],
+        "submitOnCreate": true,
+        "validateOnCreate": true
+    }
+}

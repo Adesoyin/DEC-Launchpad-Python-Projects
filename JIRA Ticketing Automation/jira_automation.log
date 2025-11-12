@@ -1,0 +1,16 @@
+2025-11-12 23:20:21,633 [ERROR] Missing field 'comments' for user jared.wood@example.com
+Traceback (most recent call last):
+  File "C:\Users\adebola.adesoyin\AppData\Local\Temp\ipykernel_43724\1341421480.py", line 53, in record_process
+    comments = user['comments']  # changed to lowercase (PostgreSQL returns lowercase)
+               ~~~~^^^^^^^^^^^^
+KeyError: 'comments'
+2025-11-12 23:20:21,635 [ERROR] Missing field 'comments' for user terri.hunt@example.com
+Traceback (most recent call last):
+  File "C:\Users\adebola.adesoyin\AppData\Local\Temp\ipykernel_43724\1341421480.py", line 53, in record_process
+    comments = user['comments']  # changed to lowercase (PostgreSQL returns lowercase)
+               ~~~~^^^^^^^^^^^^
+KeyError: 'comments'
+2025-11-12 23:21:30,305 [ERROR] Failure to create ticket for Jared Wood: Status 415
+2025-11-12 23:21:32,771 [ERROR] Failure to create ticket for Terri Hunt: Status 415
+2025-11-12 23:29:00,849 [ERROR] Failure to create ticket for Jared Wood: Status 415
+2025-11-12 23:29:02,810 [ERROR] Failure to create ticket for Terri Hunt: Status 415
