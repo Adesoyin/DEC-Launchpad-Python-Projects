@@ -40,4 +40,11 @@ It was ensured that before creating any ticket, the log table was checked ensuri
 - The notebook is commented properly and the output of each step can be checked in [the python file](getrequestfield.ipynb). 
 
 
+## Logging
+
+Get all logs information and error into [a log file ](jira_automation.log). The output of the ticket created status are logged into `integration_ticket_log` table on the DB where both successful and failed created ticket can be monitored.
+
+![alt text](images/DB%20Log%20Status%20table.png)
+
+
  
