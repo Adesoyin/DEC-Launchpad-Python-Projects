@@ -17,26 +17,26 @@ The system fetches daily inspirational quotes from the ZenQuotes API, stores the
 ## System Architecture
 Start
 
-├─ Load environment variables & initialize logging
+├─ Load environment variables & initialize logging ([Project 1 - ZenQuotes  API\includes\logging_info.py](logging_info.py),[Project 1 - ZenQuotes  API\includes\dbconnection.py](dbconnection.py) )
 
-├─ Fetch daily quote from ZenQuotes API
+├─ Fetch daily quote from ZenQuotes API ([Project 1 - ZenQuotes  API\includes\get_daily_quote.py](get_daily_quote.py))
 
-├─ Save quote to database (zenquote table)
+├─ Save quote to database ([Project 1 - ZenQuotes  API\includes\save_quote_to_db.py](save_quote_to_db.py))
 
-├─ Retrieve active user list with subscription preferences
+├─ Retrieve active user list with subscription preferences ([Project 1 - ZenQuotes  API\includes\get_users.py](save_quote_to_db.py))
 
 ├─ Send personalized emails to each user
 
 ├─ Log email status in email_log 
 
-├─ Send summary report to 
+├─ Send summary report to admin
 
 └─ Schedule recurring tasks (daily/weekly)
 
 # Technical Implementation
 ## API Integration & Data Ingestion
 
-**Script**: [./script.py](script.py)
+**Script**: [./main.py](main.py)
 
 Python scripts were written to extract daily quotes from the ZenQuotes API and ingest them into a PostgreSQL database implementing 2 retry attempts for connectivity issues with a transaction date, indicating when each quote was fetched. The script uses `psycopg2.extras.execute_values()` for efficient bulk inserts, writing multiple records (quote, author, and transaction date) into the table. This ensures that each daily quote is stored reliably.
 
@@ -72,17 +72,13 @@ Switching to SSL (port 465) resolved the problem, and email sending worked corre
 
 ## Logging & Monitoring
 
-The `script.py` maintains full logs of operations:
+The `main.py` maintains full logs of operations:
 
 Application logs are saved in [quotes_mailer.log](quotes_mailer.log), showing daily activities, retries, and email status.
 
 Database logs are stored in the email_log table, including email address, firstname, frequency, quote, author, send status, and timestamp. This provides complete visibility for monitoring and analytics.
 
 Likewise, daily email stats and summary logs was sent to the admin to note how many successful and failed emails.
-
-A screenshot of email_log data
-
-![alt text](images/email_log.png)
 
 ## Summary of Script Flow
 
@@ -107,7 +103,7 @@ A screenshot of email_log data
 
 ## Scheduling (Windows Task Scheduler)
 
-The script was automated using Windows Task Scheduler to run daily and weekly at 7:00 AM. Cron job (crontab -e)could not be used as the script was not written in linux environment.
+The script was automated using Windows Task Scheduler to run daily and weekly at 7:00 AM. Cron job (crontab -e) could not be used as the script was not written in linux environment.
 
 **Setup Steps**
 

@@ -8,8 +8,3 @@ def logging_config():
     format="%(asctime)s [%(levelname)s] %(message)s",)
 
     return logging.getLogger(__name__)
-
-
-
-#if __name__== "__main__":
-#    logger = logging_config()

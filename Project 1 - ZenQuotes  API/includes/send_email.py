@@ -30,6 +30,3 @@ def send_email(recipient, subject, body):
     except Exception as e:
         logging.error(f"Failed to send email to {recipient}: {e}")
         return "Failed"
-
-#if __name__=="__main__":
-#    send_email(*)

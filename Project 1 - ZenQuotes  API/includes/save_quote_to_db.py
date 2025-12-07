@@ -41,8 +41,3 @@ def save_quote_to_db(quote, author):
     except Exception as e:
         logging.error(f"Failed to insert quote into DB: {e}")
         return False
-
-# if __name__=="__main__":
-#     quote= get_daily_quote(quote)
-#     author = get_daily_quote({author})
-#     success = save_quote_to_db(quote, author)

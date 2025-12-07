@@ -1,5 +1,4 @@
-venv
-secrets.txt
+.venv
 .env
 script.py
 test.py
