@@ -390,3 +390,418 @@ DETAIL:  Key (quote, trans_date)=(He who knows best knows how little he knows., 
 2025-11-07 13:59:36,903 [INFO] Email sent successfully to adeboladesoyin@gmail.com
 2025-11-07 13:59:36,904 [INFO] Completed Daily quote send cycle successfully.
 2025-11-07 13:59:36,904 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-11-08 08:23:50,927 [INFO] ============================================
+2025-11-08 08:23:50,929 [INFO] Fetched successfully: "It is indeed a radical act of love just to sit down and be quiet for a time by yourself." — Jon Kabat-Zinn
+2025-11-08 08:23:51,790 [INFO] Quote successfully inserted into zenquote table.
+2025-11-08 08:23:53,690 [INFO] ============================================
+2025-11-08 08:23:53,691 [INFO] Fetched successfully: "It is indeed a radical act of love just to sit down and be quiet for a time by yourself." — Jon Kabat-Zinn
+2025-11-08 08:23:54,045 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(It is indeed a radical act of love just to sit down and be quiet for a time by yourself., 2025-11-08) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'It is indeed a radical act of love just to sit down and be quiet for a time by yourself.', 'author': 'Jon Kabat-Zinn', 'trans_date': datetime.datetime(2025, 11, 8, 8, 23, 53, 694607)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-08 08:23:54,374 [INFO] Retrieved 1 active Daily user(s).
+2025-11-08 08:24:14,479 [ERROR] Failed to send email to adeboladesoyin@gmail.com: timed out
+2025-11-08 08:24:14,758 [INFO] Logged 1 email results successfully into email_log table.
+2025-11-08 08:24:34,766 [ERROR] Failed to send email to adeboladesoyin@gmail.com: timed out
+2025-11-08 08:24:34,766 [INFO] Completed Daily quote send cycle successfully.
+2025-11-08 08:24:34,767 [INFO] Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)
+2025-11-08 09:04:42,484 [INFO] ============================================
+2025-11-08 09:04:42,486 [INFO] Fetched successfully: "It is indeed a radical act of love just to sit down and be quiet for a time by yourself." — Jon Kabat-Zinn
+2025-11-08 09:04:43,266 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(It is indeed a radical act of love just to sit down and be quiet for a time by yourself., 2025-11-08) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'It is indeed a radical act of love just to sit down and be quiet for a time by yourself.', 'author': 'Jon Kabat-Zinn', 'trans_date': datetime.datetime(2025, 11, 8, 9, 4, 42, 723565)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-08 09:04:43,268 [INFO] Scheduler started: Daily (8 AM), Weekly (saturday 9 AM)
+2025-11-08 19:46:28,528 [INFO] ============================================
+2025-11-08 19:46:28,550 [INFO] Fetched successfully: "It is indeed a radical act of love just to sit down and be quiet for a time by yourself." — Jon Kabat-Zinn
+2025-11-08 19:46:29,197 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(It is indeed a radical act of love just to sit down and be quiet for a time by yourself., 2025-11-08) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'It is indeed a radical act of love just to sit down and be quiet for a time by yourself.', 'author': 'Jon Kabat-Zinn', 'trans_date': datetime.datetime(2025, 11, 8, 19, 46, 28, 766099)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-08 19:46:29,198 [INFO] Scheduler started: Daily (8 AM), Weekly (saturday 8 AM)
+2025-11-10 13:13:37,016 [INFO] ============================================
+2025-11-10 13:13:37,044 [INFO] Fetched successfully: "The Law of Concentration states that whatever you dwell upon grows. The more you think about something, the more it becomes part of your reality." — Brian Tracy
+2025-11-10 13:13:39,140 [INFO] Quote successfully inserted into zenquote table.
+2025-11-10 13:13:39,191 [INFO] Scheduler started: Daily (8 AM), Weekly (saturday 8 AM)
+2025-11-11 11:39:08,420 [INFO] ============================================
+2025-11-11 11:39:08,422 [INFO] Fetched successfully: "A hopeless man is a very desperate and dangerous man, almost a dead man." — Robert F. Kennedy
+2025-11-11 11:39:09,304 [INFO] Quote successfully inserted into zenquote table.
+2025-11-11 11:39:09,306 [INFO] Scheduler started: Daily (8 AM), Weekly (saturday 8 AM)
+2025-11-12 13:38:00,647 [INFO] ============================================
+2025-11-12 13:38:00,650 [INFO] Fetched successfully: "Tenderness and kindness are not signs of weakness and despair, but manifestations of strength and resolution." — Kahlil Gibran
+2025-11-12 13:38:01,911 [INFO] Quote successfully inserted into zenquote table.
+2025-11-12 13:38:01,914 [INFO] Scheduler started: Daily (8 AM), Weekly (saturday 8 AM)
+2025-11-14 12:04:16,977 [INFO] ============================================
+2025-11-14 12:04:16,982 [INFO] Fetched successfully: "No man can get rich himself unless he enriches others." — Earl Nightingale
+2025-11-14 12:04:18,035 [INFO] Quote successfully inserted into zenquote table.
+2025-11-14 12:04:18,036 [INFO] Scheduler started: Daily (8 AM), Weekly (saturday 8 AM)
+2025-11-15 20:07:04,029 [INFO] ============================================
+2025-11-15 20:07:04,033 [INFO] Fetched successfully: "Beginning today, treat everyone you meet as if they were going to be dead by midnight. Your life will never be the same again." — Og Mandino
+2025-11-15 20:07:04,360 [INFO] Quote successfully inserted into zenquote table.
+2025-11-15 20:07:04,361 [INFO] Scheduler started: Daily (8 AM), Weekly (saturday 8 AM)
+2025-11-17 08:04:59,219 [INFO] ============================================
+2025-11-17 08:04:59,220 [INFO] Fetched successfully: "The power to make and break habits and learning how to do that is really important." — Naval Ravikant
+2025-11-17 08:05:00,738 [INFO] Quote successfully inserted into zenquote table.
+2025-11-17 08:05:00,739 [INFO] Scheduler started: Daily (8 AM), Weekly (saturday 8 AM)
+2025-11-17 09:00:10,982 [INFO] ============================================
+2025-11-17 09:00:10,985 [INFO] Fetched successfully: "The power to make and break habits and learning how to do that is really important." — Naval Ravikant
+2025-11-17 09:00:11,582 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(The power to make and break habits and learning how to do that is really important., 2025-11-17) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'The power to make and break habits and learning how to do that is really important.', 'author': 'Naval Ravikant', 'trans_date': datetime.datetime(2025, 11, 17, 9, 0, 11, 89227)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-17 09:00:11,586 [INFO] Scheduler started: Daily (8 AM), Weekly (saturday 8 AM)
+2025-11-18 14:57:08,466 [INFO] ============================================
+2025-11-18 14:57:08,468 [WARNING] Attempt 1 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020B7F8706E0>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-11-18 14:57:11,473 [INFO] ============================================
+2025-11-18 14:57:11,473 [WARNING] Attempt 2 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020B7F7D7C50>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-11-18 14:57:14,474 [ERROR] All retries failed fetching the quote.
+2025-11-18 14:57:14,474 [WARNING] No quote retrieved — skipping database insert.
+2025-11-18 14:57:14,476 [INFO] Scheduler started: Daily (8 AM), Weekly (saturday 8 AM)
+2025-11-19 14:43:15,921 [INFO] ============================================
+2025-11-19 14:43:15,922 [INFO] Fetched successfully: "Passion creates, addiction consumes." — Gabor Mate
+2025-11-19 14:43:17,464 [INFO] Quote successfully inserted into zenquote table.
+2025-11-19 14:43:17,466 [INFO] Scheduler started: Daily (8 AM), Weekly (saturday 8 AM)
+2025-11-19 20:58:35,286 [INFO] ============================================
+2025-11-19 20:58:35,289 [INFO] Fetched successfully: "Passion creates, addiction consumes." — Gabor Mate
+2025-11-19 20:58:36,206 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Passion creates, addiction consumes., 2025-11-19) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'Passion creates, addiction consumes.', 'author': 'Gabor Mate', 'trans_date': datetime.datetime(2025, 11, 19, 20, 58, 35, 535285)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-19 20:58:37,635 [INFO] ============================================
+2025-11-19 20:58:37,636 [INFO] Fetched successfully: "Passion creates, addiction consumes." — Gabor Mate
+2025-11-19 20:58:38,004 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Passion creates, addiction consumes., 2025-11-19) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'Passion creates, addiction consumes.', 'author': 'Gabor Mate', 'trans_date': datetime.datetime(2025, 11, 19, 20, 58, 37, 638761)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-19 20:58:38,321 [INFO] Retrieved 1 active Daily user(s).
+2025-11-19 20:58:58,457 [ERROR] Failed to send email to adeboladesoyin@gmail.com: timed out
+2025-11-19 20:58:58,798 [INFO] Logged 1 email results successfully into email_log table.
+2025-11-19 20:59:18,803 [ERROR] Failed to send email to adeboladesoyin@gmail.com: timed out
+2025-11-19 20:59:18,805 [INFO] Completed Daily quote send cycle successfully to admin.
+2025-11-19 21:17:12,858 [INFO] ============================================
+2025-11-19 21:17:12,867 [INFO] Fetched successfully: "Passion creates, addiction consumes." — Gabor Mate
+2025-11-19 21:17:13,426 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Passion creates, addiction consumes., 2025-11-19) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'Passion creates, addiction consumes.', 'author': 'Gabor Mate', 'trans_date': datetime.datetime(2025, 11, 19, 21, 17, 12, 959213)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-19 21:17:15,006 [INFO] ============================================
+2025-11-19 21:17:15,007 [INFO] Fetched successfully: "Passion creates, addiction consumes." — Gabor Mate
+2025-11-19 21:17:15,325 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Passion creates, addiction consumes., 2025-11-19) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'Passion creates, addiction consumes.', 'author': 'Gabor Mate', 'trans_date': datetime.datetime(2025, 11, 19, 21, 17, 15, 8334)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-19 21:17:15,667 [INFO] Retrieved 1 active Daily user(s).
+2025-11-19 21:17:35,755 [ERROR] Failed to send email to adeboladesoyin@gmail.com: timed out
+2025-11-19 21:17:36,094 [INFO] Logged 1 email results successfully into email_log table.
+2025-11-19 21:17:56,106 [ERROR] Failed to send email to adeboladesoyin@gmail.com: timed out
+2025-11-19 21:17:56,107 [INFO] Completed Daily quote send cycle successfully to admin.
+2025-11-19 21:23:43,319 [INFO] ============================================
+2025-11-19 21:23:43,320 [INFO] Fetched successfully: "Passion creates, addiction consumes." — Gabor Mate
+2025-11-19 21:23:43,809 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Passion creates, addiction consumes., 2025-11-19) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'Passion creates, addiction consumes.', 'author': 'Gabor Mate', 'trans_date': datetime.datetime(2025, 11, 19, 21, 23, 43, 403422)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-19 21:23:45,458 [INFO] ============================================
+2025-11-19 21:23:45,459 [INFO] Fetched successfully: "Passion creates, addiction consumes." — Gabor Mate
+2025-11-19 21:23:45,814 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Passion creates, addiction consumes., 2025-11-19) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'Passion creates, addiction consumes.', 'author': 'Gabor Mate', 'trans_date': datetime.datetime(2025, 11, 19, 21, 23, 45, 462540)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-19 21:23:46,156 [INFO] Retrieved 1 active Daily user(s).
+2025-11-19 21:23:50,476 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-11-19 21:23:50,846 [INFO] Logged 1 email results successfully into email_log table.
+2025-11-19 21:24:20,929 [ERROR] Failed to send email to adeboladesoyin@gmail.com: Connection unexpectedly closed: timed out
+2025-11-19 21:24:20,930 [INFO] Completed Daily quote send cycle successfully to admin.
+2025-11-20 13:10:58,522 [INFO] ============================================
+2025-11-20 13:10:58,527 [INFO] Fetched successfully: "The opportunity of defeating the enemy is provided by the enemy himself." — Sun Tzu
+2025-11-20 13:10:59,742 [INFO] Quote successfully inserted into zenquote table.
+2025-11-20 13:11:01,759 [INFO] ============================================
+2025-11-20 13:11:01,760 [INFO] Fetched successfully: "The opportunity of defeating the enemy is provided by the enemy himself." — Sun Tzu
+2025-11-20 13:11:02,108 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(The opportunity of defeating the enemy is provided by the enemy himself., 2025-11-20) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'The opportunity of defeating the enemy is provided by the enemy himself.', 'author': 'Sun Tzu', 'trans_date': datetime.datetime(2025, 11, 20, 13, 11, 1, 763265)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-20 13:11:02,441 [INFO] Retrieved 1 active Daily user(s).
+2025-11-20 13:11:06,514 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-11-20 13:11:06,895 [INFO] Logged 1 email results successfully into email_log table.
+2025-11-20 13:11:10,772 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-11-20 13:11:10,773 [INFO] Completed Daily quote send cycle successfully to admin.
+2025-11-20 13:26:23,942 [INFO] ============================================
+2025-11-20 13:26:23,946 [INFO] Fetched successfully: "The opportunity of defeating the enemy is provided by the enemy himself." — Sun Tzu
+2025-11-20 13:26:26,940 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(The opportunity of defeating the enemy is provided by the enemy himself., 2025-11-20) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'The opportunity of defeating the enemy is provided by the enemy himself.', 'author': 'Sun Tzu', 'trans_date': datetime.datetime(2025, 11, 20, 13, 26, 24, 421239)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-20 13:26:29,599 [INFO] ============================================
+2025-11-20 13:26:29,599 [INFO] Fetched successfully: "The opportunity of defeating the enemy is provided by the enemy himself." — Sun Tzu
+2025-11-20 13:26:30,060 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(The opportunity of defeating the enemy is provided by the enemy himself., 2025-11-20) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'The opportunity of defeating the enemy is provided by the enemy himself.', 'author': 'Sun Tzu', 'trans_date': datetime.datetime(2025, 11, 20, 13, 26, 29, 601650)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-20 13:26:30,415 [INFO] Retrieved 1 active Daily user(s).
+2025-11-20 13:26:33,906 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-11-20 13:26:34,428 [INFO] Logged 1 email results successfully into email_log table.
+2025-11-20 13:26:37,200 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-11-20 13:26:37,201 [INFO] Completed Daily quote send cycle successfully to admin.
+2025-11-21 15:55:30,770 [INFO] ============================================
+2025-11-21 15:55:30,771 [INFO] Fetched successfully: "We suffer more often in imagination than in reality.  " — Seneca
+2025-11-21 15:55:31,642 [INFO] Quote successfully inserted into zenquote table.
+2025-11-21 15:55:33,196 [INFO] ============================================
+2025-11-21 15:55:33,197 [INFO] Fetched successfully: "We suffer more often in imagination than in reality.  " — Seneca
+2025-11-21 15:55:33,562 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(We suffer more often in imagination than in reality.  , 2025-11-21) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'We suffer more often in imagination than in reality.  ', 'author': 'Seneca', 'trans_date': datetime.datetime(2025, 11, 21, 15, 55, 33, 199925)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-11-21 15:55:33,913 [INFO] Retrieved 1 active Daily user(s).
+2025-11-21 15:55:37,817 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-11-21 15:55:38,144 [INFO] Logged 1 email results successfully into email_log table.
+2025-11-21 15:56:08,250 [ERROR] Failed to send email to adeboladesoyin@gmail.com: Connection unexpectedly closed: timed out
+2025-11-21 15:56:08,251 [INFO] Completed Daily quote send cycle successfully to admin.
+2025-11-23 09:17:06,059 [INFO] ============================================
+2025-11-23 09:17:06,106 [WARNING] Attempt 1 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002581C53C6E0>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-11-23 09:17:09,108 [INFO] ============================================
+2025-11-23 09:17:09,108 [WARNING] Attempt 2 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002581C4AFB10>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-11-23 09:17:12,109 [ERROR] All retries failed fetching the quote.
+2025-11-23 09:17:12,109 [WARNING] No quote retrieved — skipping database insert.
+2025-11-23 09:17:12,111 [INFO] ============================================
+2025-11-23 09:17:12,111 [WARNING] Attempt 1 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002581C554550>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-11-23 09:17:15,118 [INFO] ============================================
+2025-11-23 09:17:15,118 [WARNING] Attempt 2 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002581C5547D0>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-11-23 09:17:18,119 [ERROR] All retries failed fetching the quote.
+2025-11-23 09:17:18,119 [ERROR] No quote retrieved; skipping email send.
+2025-11-23 09:22:23,684 [INFO] ============================================
+2025-11-23 09:22:23,684 [WARNING] Attempt 1 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001A7E6B3C6E0>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-11-23 09:22:26,689 [INFO] ============================================
+2025-11-23 09:22:26,689 [WARNING] Attempt 2 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001A7E6AAFB10>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-11-23 09:22:29,690 [ERROR] All retries failed fetching the quote.
+2025-11-23 09:22:29,690 [WARNING] No quote retrieved — skipping database insert.
+2025-11-23 09:22:29,694 [INFO] ============================================
+2025-11-23 09:22:29,694 [WARNING] Attempt 1 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001A7E6B54550>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-11-23 09:22:32,697 [INFO] ============================================
+2025-11-23 09:22:32,698 [WARNING] Attempt 2 failed fetching quote: HTTPSConnectionPool(host='zenquotes.io', port=443): Max retries exceeded with url: /api/today/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001A7E6B547D0>: Failed to resolve 'zenquotes.io' ([Errno 11001] getaddrinfo failed)"))
+2025-11-23 09:22:35,698 [ERROR] All retries failed fetching the quote.
+2025-11-23 09:22:35,698 [ERROR] No quote retrieved; skipping email send.
+2025-12-02 10:50:23,889 [INFO] ============================================
+2025-12-02 10:50:23,891 [INFO] Fetched successfully: "Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose." — Steve Jobs
+2025-12-02 10:50:24,195 [INFO] ============================================
+2025-12-02 10:50:24,195 [INFO] Fetched successfully: "Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose." — Steve Jobs
+2025-12-02 10:50:25,322 [INFO] Quote successfully inserted into zenquote table.
+2025-12-02 10:50:25,350 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose., 2025-12-02) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose.', 'author': 'Steve Jobs', 'trans_date': datetime.datetime(2025, 12, 2, 10, 50, 24, 315342)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-12-02 10:50:25,651 [INFO] Retrieved 1 active Daily user(s).
+2025-12-02 10:50:25,652 [INFO] Retrieved 1 active Daily user(s).
+2025-12-02 10:50:46,778 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-12-02 10:50:46,780 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-12-02 10:50:47,211 [INFO] Logged 1 email results successfully into email_log table.
+2025-12-02 10:50:47,211 [INFO] Logged 1 email results successfully into email_log table.
+2025-12-02 10:51:08,240 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-12-02 10:51:08,241 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-12-02 10:51:08,241 [INFO] Completed Daily quote send cycle successfully to admin.
+2025-12-02 10:51:08,241 [INFO] Completed Daily quote send cycle successfully to admin.
+2025-12-02 10:58:45,054 [INFO] ============================================
+2025-12-02 10:58:45,058 [INFO] Fetched successfully: "Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose." — Steve Jobs
+2025-12-02 10:58:45,542 [ERROR] Failed to insert quote into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose., 2025-12-02) already exists.
+
+[SQL: INSERT INTO dbo.zenquote (quote, author, trans_date) VALUES (%(quote)s, %(author)s, %(trans_date)s)]
+[parameters: {'quote': 'Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose.', 'author': 'Steve Jobs', 'trans_date': datetime.datetime(2025, 12, 2, 10, 58, 45, 161047)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-12-02 10:58:45,819 [INFO] Retrieved 1 active Daily user(s).
+2025-12-02 10:59:06,906 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-12-02 10:59:07,221 [INFO] Logged 1 email results successfully into email_log table.
+2025-12-02 10:59:28,305 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-12-02 10:59:28,306 [INFO] Completed Daily quote send cycle successfully to admin.
+2025-12-03 12:56:51,343 [INFO] ============================================
+2025-12-03 12:56:51,346 [INFO] Fetched successfully: "Believe in one thing too much and you have no room for new ideas.  " — Ray Bradbury
+2025-12-03 12:56:52,574 [INFO] Quote successfully inserted into zenquote table.
+2025-12-03 12:56:52,988 [INFO] Retrieved 1 active Daily user(s).
+2025-12-03 12:56:56,502 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-12-03 12:56:56,850 [INFO] Logged 1 email results successfully into email_log table.
+2025-12-03 12:57:26,882 [ERROR] Failed to send email to adeboladesoyin@gmail.com: Connection unexpectedly closed: timed out
+2025-12-03 12:57:26,883 [INFO] Completed Daily quote send cycle successfully to admin.
+2025-12-04 09:00:30,184 [INFO] ============================================
+2025-12-04 09:00:30,187 [INFO] Fetched successfully: "Problems remain as problems because people are busy defending them rather than finding solutions." — Celestine Chua
+2025-12-04 09:00:31,641 [INFO] Quote successfully inserted into zenquote table.
+2025-12-04 09:00:32,200 [INFO] Retrieved 1 active Daily user(s).
+2025-12-04 09:00:37,683 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-12-04 09:00:38,160 [INFO] Logged 1 email results successfully into email_log table.
+2025-12-04 09:00:43,476 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-12-04 09:00:43,477 [INFO] Completed Daily quote send cycle successfully to admin.
+2025-12-05 09:00:30,056 [INFO] ============================================
+2025-12-05 09:00:30,060 [INFO] Fetched successfully: "The foolish reject what they see, not what they think; the wise reject what they think, not what they see." — Huang Po
+2025-12-05 09:00:31,867 [INFO] Quote successfully inserted into zenquote table.
+2025-12-05 09:00:32,431 [INFO] Retrieved 1 active Daily user(s).
+2025-12-05 09:00:53,548 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-12-05 09:00:54,099 [INFO] Logged 1 email results successfully into email_log table.
+2025-12-05 09:01:15,134 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-12-05 09:01:15,137 [INFO] Completed Daily quote send cycle successfully to admin.
+2025-12-06 14:03:39,838 [INFO] ============================================
+2025-12-06 14:03:42,287 [INFO] Fetched successfully: "He who can, does." — George Bernard Shaw
+2025-12-06 14:03:45,300 [INFO] Quote successfully inserted into zenquote table.
+2025-12-06 14:03:46,149 [INFO] Retrieved 1 active Weekly user(s).
+2025-12-06 14:04:07,970 [ERROR] Failed to send email to adebola.adesoyin@avonhealthcare.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-12-06 14:04:09,425 [INFO] Logged 1 email results successfully into email_log table.
+2025-12-06 14:04:30,464 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-12-06 14:04:30,470 [INFO] Completed Weekly quote send cycle successfully to admin.
+2025-12-07 14:43:24,831 [INFO] ============================================
+2025-12-07 14:43:24,832 [INFO] Fetched successfully: "Move out of your comfort zone. You can only grow if you are willing to feel awkward and uncomfortable when you try something new." — Brian Tracy
+2025-12-07 14:43:25,944 [INFO] Quote successfully inserted into zenquote table.
+2025-12-07 14:43:26,305 [INFO] Retrieved 1 active Daily user(s).
+2025-12-07 14:43:47,561 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-12-07 14:43:48,019 [INFO] Logged 1 email results successfully into email_log table.
+2025-12-07 14:44:09,314 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-12-07 14:44:09,389 [INFO] Completed Daily quote send cycle successfully to admin.
+2025-12-07 16:20:43,827 [INFO] Today is Sunday - Running Daily quote
+2025-12-07 16:20:43,828 [INFO] Starting Daily quote sending process....
+2025-12-07 16:20:45,799 [INFO] ==================================================
+2025-12-07 16:20:45,800 [INFO] Quote fetched successfully: "Move out of your comfort zone. You can only grow if you are willing to feel awkward and uncomfortable when you try something new." — Brian Tracy
+2025-12-07 16:20:46,086 [INFO] Database connection established successfully
+2025-12-07 16:20:46,132 [ERROR] Failed to insert quote into DB: duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Move out of your comfort zone. You can only grow if you are willing to feel awkward and uncomfortable when you try something new., 2025-12-07) already exists.
+
+2025-12-07 16:20:46,353 [INFO] Database connection established successfully
+2025-12-07 16:20:46,364 [ERROR] Database users query failed: column "frequency" does not exist
+LINE 2: ...                  SELECT email_address, firstname, frequency
+                                                              ^
+
+2025-12-07 16:20:46,365 [WARNING] No {frequency} users found; skipping email send.
+2025-12-07 16:35:07,241 [INFO] Database connection established successfully
+2025-12-07 16:35:07,438 [INFO] Database connection established successfully
+2025-12-07 16:35:07,786 [INFO] Database connection established successfully
+2025-12-07 16:35:07,788 [ERROR] Database users query failed: column "frequency" does not exist
+LINE 2: ...                  SELECT email_address, firstname, frequency
+                                                              ^
+
+2025-12-07 16:35:07,993 [INFO] Database connection established successfully
+2025-12-07 16:35:07,997 [ERROR] Database users query failed: column "frequency" does not exist
+LINE 2: ...                  SELECT email_address, firstname, frequency
+                                                              ^
+
+2025-12-07 16:39:43,704 [INFO] Today is Sunday - Running Daily quote
+2025-12-07 16:39:43,704 [INFO] Starting Daily quote sending process....
+2025-12-07 16:39:45,322 [INFO] ==================================================
+2025-12-07 16:39:45,322 [INFO] Quote fetched successfully: "Move out of your comfort zone. You can only grow if you are willing to feel awkward and uncomfortable when you try something new." — Brian Tracy
+2025-12-07 16:39:45,610 [INFO] Database connection established successfully
+2025-12-07 16:39:45,621 [ERROR] Failed to insert quote into DB: duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Move out of your comfort zone. You can only grow if you are willing to feel awkward and uncomfortable when you try something new., 2025-12-07) already exists.
+
+2025-12-07 16:39:45,854 [INFO] Database connection established successfully
+2025-12-07 16:39:45,855 [ERROR] Database users query failed: column "frequency" does not exist
+LINE 2: ...                  SELECT email_address, firstname, frequency
+                                                              ^
+
+2025-12-07 16:39:45,856 [WARNING] No {frequency} users found; skipping email send.
+2025-12-07 16:41:32,532 [INFO] Today is Sunday - Running Daily quote
+2025-12-07 16:41:32,532 [INFO] Starting Daily quote sending process....
+2025-12-07 16:41:34,434 [INFO] ==================================================
+2025-12-07 16:41:34,435 [INFO] Quote fetched successfully: "Move out of your comfort zone. You can only grow if you are willing to feel awkward and uncomfortable when you try something new." — Brian Tracy
+2025-12-07 16:41:34,675 [INFO] Database connection established successfully
+2025-12-07 16:41:34,689 [ERROR] Failed to insert quote into DB: duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Move out of your comfort zone. You can only grow if you are willing to feel awkward and uncomfortable when you try something new., 2025-12-07) already exists.
+
+2025-12-07 16:41:34,911 [INFO] Database connection established successfully
+2025-12-07 16:41:34,914 [ERROR] Database users query failed: column "frequency" does not exist
+LINE 2:             SELECT email_address, firstname, frequency
+                                                     ^
+
+2025-12-07 16:41:34,914 [WARNING] No {frequency} users found; skipping email send.
+2025-12-07 16:54:14,603 [INFO] SQLAlchemy engine created successfully
+2025-12-07 16:58:05,610 [INFO] SQLAlchemy engine created successfully
+2025-12-07 16:58:32,267 [INFO] SQLAlchemy engine created successfully
+2025-12-07 16:58:32,547 [INFO] SQLAlchemy engine created successfully
+2025-12-07 16:58:32,896 [INFO] SQLAlchemy engine created successfully
+2025-12-07 16:58:32,897 [ERROR] Database users query failed: 'Engine' object has no attribute 'cursor'
+2025-12-07 17:09:11,095 [INFO] Today is Sunday - Running Daily quote
+2025-12-07 17:09:11,095 [INFO] Starting Daily quote sending process....
+2025-12-07 17:09:12,760 [INFO] ==================================================
+2025-12-07 17:09:12,760 [INFO] Quote fetched successfully: "Move out of your comfort zone. You can only grow if you are willing to feel awkward and uncomfortable when you try something new." — Brian Tracy
+2025-12-07 17:09:12,835 [INFO] SQLAlchemy engine created successfully
+2025-12-07 17:09:13,064 [ERROR] Failed to insert quote into DB: duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Move out of your comfort zone. You can only grow if you are willing to feel awkward and uncomfortable when you try something new., 2025-12-07) already exists.
+
+2025-12-07 17:09:13,065 [INFO] SQLAlchemy engine created successfully
+2025-12-07 17:09:13,339 [ERROR] Database users query failed: column "frequency" does not exist
+LINE 2:             SELECT email_address, firstname, frequency
+                                                     ^
+
+2025-12-07 17:09:13,340 [WARNING] No {frequency} users found; skipping email send.
+2025-12-07 17:15:27,760 [INFO] Today is Sunday - Running Daily quote
+2025-12-07 17:15:27,761 [INFO] Starting Daily quote sending process....
+2025-12-07 17:15:29,591 [INFO] ==================================================
+2025-12-07 17:15:29,591 [INFO] Quote fetched successfully: "Move out of your comfort zone. You can only grow if you are willing to feel awkward and uncomfortable when you try something new." — Brian Tracy
+2025-12-07 17:15:29,722 [INFO] SQLAlchemy engine created successfully
+2025-12-07 17:15:30,049 [ERROR] Failed to insert quote into DB: duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Move out of your comfort zone. You can only grow if you are willing to feel awkward and uncomfortable when you try something new., 2025-12-07) already exists.
+
+2025-12-07 17:15:30,050 [INFO] SQLAlchemy engine created successfully
+2025-12-07 17:15:30,373 [INFO] Retrieved 1 active Daily user(s).
+2025-12-07 17:15:30,375 [INFO] Preparing to send emails to 1 user(s)...
+2025-12-07 17:15:30,375 [INFO] Scheduler failed: too many values to unpack (expected 2)
+2025-12-07 17:18:30,597 [INFO] Today is Sunday - Running Daily quote
+2025-12-07 17:18:30,597 [INFO] Starting Daily quote sending process....
+2025-12-07 17:18:32,375 [INFO] ==================================================
+2025-12-07 17:18:32,376 [INFO] Quote fetched successfully: "Move out of your comfort zone. You can only grow if you are willing to feel awkward and uncomfortable when you try something new." — Brian Tracy
+2025-12-07 17:18:32,440 [INFO] SQLAlchemy engine created successfully
+2025-12-07 17:18:32,675 [ERROR] Failed to insert quote into DB: duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Move out of your comfort zone. You can only grow if you are willing to feel awkward and uncomfortable when you try something new., 2025-12-07) already exists.
+
+2025-12-07 17:18:32,676 [INFO] SQLAlchemy engine created successfully
+2025-12-07 17:18:32,886 [INFO] Retrieved 1 active Daily user(s).
+2025-12-07 17:18:32,887 [INFO] Preparing to send emails to 1 user(s)...
+2025-12-07 17:18:54,010 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-12-07 17:18:54,010 [INFO] SQLAlchemy engine created successfully
+2025-12-07 17:18:54,306 [INFO] Logged 1 email results successfully into email_log table.
+2025-12-07 17:19:15,351 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-12-07 17:19:15,352 [INFO] Summary report sent to admin: adeboladesoyin@gmail.com
+2025-12-07 17:19:15,352 [INFO] Completed Daily quote send cycle successfully to admin.
+2025-12-07 17:19:15,352 [INFO] ==================================================
+2025-12-07 17:30:59,942 [INFO] Today is Sunday - Running Daily quote
+2025-12-07 17:30:59,943 [INFO] Starting Daily quote sending process....
+2025-12-07 17:31:04,614 [INFO] ==================================================
+2025-12-07 17:31:04,614 [INFO] Quote fetched successfully: "Move out of your comfort zone. You can only grow if you are willing to feel awkward and uncomfortable when you try something new." — Brian Tracy
+2025-12-07 17:31:04,705 [INFO] SQLAlchemy engine created successfully
+2025-12-07 17:31:05,080 [ERROR] Failed to insert quote into DB: duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(Move out of your comfort zone. You can only grow if you are willing to feel awkward and uncomfortable when you try something new., 2025-12-07) already exists.
+
+2025-12-07 17:31:05,082 [INFO] SQLAlchemy engine created successfully
+2025-12-07 17:31:05,388 [INFO] Retrieved 1 active Daily user(s).
+2025-12-07 17:31:05,390 [INFO] Preparing to send emails to 1 user(s)...
+2025-12-07 17:31:12,784 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-12-07 17:31:12,785 [INFO] SQLAlchemy engine created successfully
+2025-12-07 17:31:13,089 [INFO] Logged 1 email results successfully into email_log table.
+2025-12-07 17:31:16,353 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-12-07 17:31:16,354 [INFO] Summary report sent to admin: adeboladesoyin@gmail.com
+2025-12-07 17:31:16,355 [INFO] Completed Daily quote send cycle successfully to admin.
+2025-12-07 17:31:16,355 [INFO] ==================================================

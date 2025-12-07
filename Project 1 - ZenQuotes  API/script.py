@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+
 import requests #to make API requests
 import schedule
 import time
@@ -88,32 +88,17 @@ def save_quote_to_db(quote, author):
         logging.error(f"Failed to insert quote into DB: {e}")
         print(f"Failed to insert quote into DB: {e}")
 
-#Call the function to perform table insert
-quote, author = get_daily_quote()
-if quote:
-    save_quote_to_db(quote, author)
-else:
-    logging.warning("No quote retrieved — skipping database insert.")
-
-
-# Database Connection function
-# ----------------------------------------------------------
-def get_connection():
-    return psycopg2.connect(
-        user=DB_USER,
-        password=DB_PASSWORD,
-        host=DB_HOST,
-        port=DB_PORT,
-        dbname=DB_NAME
-    )
 
 
 # Retrieving Active Users Based on Frequency from the DB
 # ----------------------------------------------------------
 def get_users(frequency):
     try:
-        with get_connection() as conn:
-            with conn.cursor() as cur:
+        engine = create_engine(f'postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}' )
+        #with get_connection() as conn:
+            #with conn.cursor() as cur:
+        with engine.connect() as conn:
+            with conn.connection.cursor() as cur:
                 query = """
                     SELECT email_address, firstname
                     FROM dbo.users
@@ -138,19 +123,15 @@ def send_email(recipient, subject, body):
     msg["Subject"] = subject
     msg.attach(MIMEText(body, "html"))
 
-
-#with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=20) as server:
-#    server.login(SENDER_EMAIL, SENDER_PASSWORD)
-#    server.send_message(msg)
-
 #with smtplib.SMTP("smtp.gmail.com", 587, timeout=30) as server:
 #            server.starttls()
 #            server.login(SENDER_EMAIL, SENDER_PASSWORD)
 #            server.send_message(msg)
 
     try:
-        with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=20) as server:
-            #server.starttls()
+        #with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=20) as server:
+        with smtplib.SMTP("smtp.gmail.com", 587, timeout=30) as server:
+            server.starttls()
             server.login(SENDER_EMAIL, SENDER_PASSWORD)
             server.send_message(msg)
         logging.info(f"Email sent successfully to {recipient}")
@@ -168,8 +149,11 @@ def log_email_status(records):
       (email_address, firstname, frequency, sent_status, quote, author, sent_at)
     """
     try:
-        with get_connection() as conn:
-            with conn.cursor() as cur:
+        engine = create_engine(f'postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}' )
+        with engine.connect() as conn:
+            with conn.connection.cursor() as cur:
+        #with get_connection() as conn:
+            #with conn.cursor() as cur:
                 insert_query = """
                     INSERT INTO email_log (
                         email_address, firstname, frequency,
@@ -205,7 +189,7 @@ def send_summary_report(frequency, results, quote, author):
     <p>Do not reply</p>
     """
 
-    # Send the summary to me
+    # Send the summary to admin
     send_email(ADMIN_EMAIL, subject, body)
 
 
@@ -251,17 +235,67 @@ def send_quotes(frequency):
     # Log results and send mail to me
     log_email_status(results)
     send_summary_report(frequency, results, quote, author)
-    logging.info(f"Completed {frequency} quote send cycle successfully.")
+    logging.info(f"Completed {frequency} quote send cycle successfully to admin.")
 
-#Testing now if the script works up till this stage
-send_quotes("Daily")
-# send_quotes("Weekly")
 
-# Scheduler Setup
-# -----------------------------------------------------------
-schedule.every().day.at("07:00").do(send_quotes, frequency="Daily") 
-schedule.every().saturday.at("07:00").do(send_quotes, frequency="Weekly")
-logging.info("Scheduler started: Daily (7 AM), Weekly (Friday 7 AM)")
+
+
+#Call the function to perform table insert
+# quote, author = get_daily_quote()
+# if quote:
+#     save_quote_to_db(quote, author)
+# else:
+#     logging.warning("No quote retrieved — skipping database insert.")
+
+# #If today is saturday, send weekly quotes, else send daily quotes
+# if (format(datetime.now(), "%A") == "Saturday"):
+#     send_quotes("Weekly")
+# else:
+#     send_quotes("Daily")
+
+def run_external_logic():
+    """
+    Airflow will call only this function.
+    All your existing workflow stays the same.
+    """
+    quote, author = get_daily_quote()
+    if quote:
+        save_quote_to_db(quote, author)
+    else:
+        logging.warning("No quote retrieved — skipping DB insert.")
+        return "Quote fetch failed"
+
+    # Weekly vs. daily logic
+today = datetime.now().strftime("%A")
+
+if today == "Saturday":
+    send_quotes("Weekly")
+else:
+    send_quotes("Daily")
+
+print(f'Quote process completed')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# # Scheduler Setup
+# # -----------------------------------------------------------
+# schedule.every().day.at("08:00").do(send_quotes, frequency="Daily") 
+# schedule.every().saturday.at("08:00").do(send_quotes, frequency="Weekly")
+# logging.info("Scheduler started: Daily (8 AM), Weekly (saturday 8 AM)")
+
 
 
 

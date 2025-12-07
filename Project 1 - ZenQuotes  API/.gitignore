@@ -1,4 +1,6 @@
 venv
 secrets.txt
 .env
+script.py
+test.py
 __pycache__/
