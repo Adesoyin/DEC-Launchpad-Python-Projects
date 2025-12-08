@@ -48,7 +48,7 @@ See [the sql statement](SQLstatement.sql) for complete schema definition.
 
 💠 During testing, Gmail’s default SMTP on port 587 (STARTTLS) failed due to timeout or firewall issues. Switching to SSL (port 465) resolved the problem, and email sending worked correctly.
 
-💠 Implements App Passwords sfor enhmaced security
+💠 Implements App Passwords for enhanced security
 
 💠 Supports personalized content based on user preferences
 
