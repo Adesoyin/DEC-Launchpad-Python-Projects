@@ -805,3 +805,82 @@ DETAIL:  Key (quote, trans_date)=(Move out of your comfort zone. You can only gr
 2025-12-07 17:31:16,354 [INFO] Summary report sent to admin: adeboladesoyin@gmail.com
 2025-12-07 17:31:16,355 [INFO] Completed Daily quote send cycle successfully to admin.
 2025-12-07 17:31:16,355 [INFO] ==================================================
+2025-12-08 12:00:38,916 [INFO] Today is Monday - Running Daily quote
+2025-12-08 12:00:38,918 [INFO] Starting Daily quote sending process....
+2025-12-08 12:00:40,414 [INFO] ==================================================
+2025-12-08 12:00:40,415 [INFO] Quote fetched successfully: "If you do not push the boundaries, you will never know where they are." — T.S. Eliot
+2025-12-08 12:00:40,754 [INFO] SQLAlchemy engine created successfully
+2025-12-08 12:00:40,991 [ERROR] Failed to insert quote into DB: connection to server at "localhost" (::1), port 5433 failed: FATAL:  no pg_hba.conf entry for host "::1", user "postgres", database "launchpad", no encryption
+
+2025-12-08 12:00:40,991 [INFO] SQLAlchemy engine created successfully
+2025-12-08 12:00:41,264 [ERROR] Database users query failed: connection to server at "localhost" (::1), port 5433 failed: FATAL:  no pg_hba.conf entry for host "::1", user "postgres", database "launchpad", no encryption
+
+2025-12-08 12:00:41,264 [INFO] Scheduler failed: cannot access local variable 'conn' where it is not associated with a value
+2025-12-08 12:05:57,766 [INFO] Today is Monday - Running Daily quote
+2025-12-08 12:05:57,767 [INFO] Starting Daily quote sending process....
+2025-12-08 12:06:00,300 [INFO] ==================================================
+2025-12-08 12:06:00,301 [INFO] Quote fetched successfully: "If you do not push the boundaries, you will never know where they are." — T.S. Eliot
+2025-12-08 12:06:00,411 [INFO] SQLAlchemy engine created successfully
+2025-12-08 12:06:04,511 [ERROR] Failed to insert quote into DB: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-12-08 12:06:04,512 [INFO] SQLAlchemy engine created successfully
+2025-12-08 12:06:08,633 [ERROR] Database users query failed: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-12-08 12:06:08,634 [INFO] Scheduler failed: cannot access local variable 'conn' where it is not associated with a value
+2025-12-08 12:09:14,227 [INFO] Today is Monday - Running Daily quote
+2025-12-08 12:09:14,228 [INFO] Starting Daily quote sending process....
+2025-12-08 12:09:16,704 [INFO] ==================================================
+2025-12-08 12:09:16,705 [INFO] Quote fetched successfully: "If you do not push the boundaries, you will never know where they are." — T.S. Eliot
+2025-12-08 12:09:16,850 [INFO] SQLAlchemy engine created successfully
+2025-12-08 12:09:20,940 [ERROR] Failed to insert quote into DB: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-12-08 12:09:20,941 [INFO] SQLAlchemy engine created successfully
+2025-12-08 12:09:25,073 [ERROR] Database users query failed: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-12-08 12:09:25,074 [INFO] Scheduler failed: cannot access local variable 'conn' where it is not associated with a value
+2025-12-08 12:37:52,143 [INFO] Today is Monday - Running Daily quote
+2025-12-08 12:37:52,143 [INFO] Starting Daily quote sending process....
+2025-12-08 12:37:53,840 [INFO] ==================================================
+2025-12-08 12:37:53,841 [INFO] Quote fetched successfully: "If you do not push the boundaries, you will never know where they are." — T.S. Eliot
+2025-12-08 12:37:53,955 [INFO] SQLAlchemy engine created successfully
+2025-12-08 12:37:54,333 [INFO] Quote successfully inserted into zenquote table.
+2025-12-08 12:37:54,334 [INFO] SQLAlchemy engine created successfully
+2025-12-08 12:37:54,722 [INFO] Retrieved 1 active Daily user(s).
+2025-12-08 12:37:54,723 [INFO] Preparing to send emails to 1 user(s)...
+2025-12-08 12:37:58,153 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-12-08 12:37:58,154 [INFO] SQLAlchemy engine created successfully
+2025-12-08 12:37:58,594 [INFO] Logged 1 email results successfully into email_log table.
+2025-12-08 12:38:01,723 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-12-08 12:38:01,724 [INFO] Summary report sent to admin: adeboladesoyin@gmail.com
+2025-12-08 12:38:01,724 [INFO] Completed Daily quote send cycle successfully to admin.
+2025-12-08 12:38:01,724 [INFO] ==================================================
+2025-12-08 13:02:13,883 [INFO] Today is Monday - Running Daily quote
+2025-12-08 13:02:13,884 [INFO] Starting Daily quote sending process....
+2025-12-08 13:02:15,920 [INFO] ==================================================
+2025-12-08 13:02:15,920 [INFO] Quote fetched successfully: "If you do not push the boundaries, you will never know where they are." — T.S. Eliot
+2025-12-08 13:02:16,057 [INFO] SQLAlchemy engine created successfully
+2025-12-08 13:02:16,386 [ERROR] Failed to insert quote into DB: duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(If you do not push the boundaries, you will never know where they are., 2025-12-08) already exists.
+
+2025-12-08 13:02:16,388 [INFO] SQLAlchemy engine created successfully
+2025-12-08 13:02:16,705 [INFO] Retrieved 1 active Daily user(s).
+2025-12-08 13:02:16,706 [INFO] Preparing to send emails to 1 user(s)...
+2025-12-08 13:02:20,222 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-12-08 13:02:20,224 [INFO] SQLAlchemy engine created successfully
+2025-12-08 13:02:20,557 [INFO] Logged 1 email results successfully into email_log table.
+2025-12-08 13:02:23,703 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-12-08 13:02:23,704 [INFO] Summary report sent to admin: adeboladesoyin@gmail.com
+2025-12-08 13:02:23,705 [INFO] Completed Daily quote send cycle successfully to admin.
+2025-12-08 13:02:23,705 [INFO] ==================================================

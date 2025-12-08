@@ -1,5 +1,4 @@
-
-import pandas as pd
+#import pandas as pd
 from datetime import datetime
 from includes.dbconnection import get_engine
 from includes.get_daily_quote import get_daily_quote

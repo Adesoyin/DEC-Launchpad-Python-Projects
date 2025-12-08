@@ -1,7 +1,6 @@
 import os, sys
 from dotenv import load_dotenv
 from datetime import datetime
-import pandas as pd
 from includes.logging_info import logging_config
 from includes.get_daily_quote import get_daily_quote
 from includes.save_quote_to_db import save_quote_to_db
@@ -65,7 +64,6 @@ def send_summary_report(frequency, results, quote, author):
 
 
 # Main Function: Fetch Quote, Send Emails, Log Results, Report
-# ----------------------------------------------------------
 def send_quotes(frequency):
     logging.info(f'Starting {frequency} quote sending process....')
 

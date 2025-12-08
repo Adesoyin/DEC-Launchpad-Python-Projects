@@ -1,62 +1,41 @@
 # DEC-Launchpad-ZenQuotes API Python Project
 
-This project tested my data engineering and automation skills in building an automated quote email delivery platform for MindFuel, a mental wellness startup.
+An automated platform for delivering daily inspirational quotes to subscribed users. This system fetches quotes from the ZenQuotes API, stores them in a PostgreSQL database, and sends personalized emails based on user preferences.
 
-The system fetches daily inspirational quotes from the ZenQuotes API, stores them in a database, and automatically sends personalized quotes to subscribed users based on their frequency preferences (daily or weekly).
-
-## Objectives
-
-1. ✅ Pull new quotes daily from [ZenQuotes API](https://zenquotes.io/api/today/)
-
-2. ✅ Personalize and send quotes to subscribed users at 7:00 AM daily
-
-3. ✅ Log all activity, including success/failure details
-
-4. ✅ Scale easily to support hundreds or thousands of users.
+The MindFuel Mental Wellness Startup system automatically delivers inspirational quotes to subscribers. It pulls daily quotes from the ZenQuotes API, stores them in a database, and sends personalized emails at 7:00 AM based on user frequency preferences (daily or weekly).
 
 ## System Architecture
-Start
 
-├─ Load environment variables & initialize logging ([Project 1 - ZenQuotes  API\includes\logging_info.py](logging_info.py),[Project 1 - ZenQuotes  API\includes\dbconnection.py](dbconnection.py) )
+![alt text](images/Architectural%20diagram.png)
 
-├─ Fetch daily quote from ZenQuotes API ([Project 1 - ZenQuotes  API\includes\get_daily_quote.py](get_daily_quote.py))
+## Key Features
 
-├─ Save quote to database ([Project 1 - ZenQuotes  API\includes\save_quote_to_db.py](save_quote_to_db.py))
+✅ Automated Quote Fetching: Daily retrieval from ZenQuotes API with retry logic
 
-├─ Retrieve active user list with subscription preferences ([Project 1 - ZenQuotes  API\includes\get_users.py](save_quote_to_db.py))
+✅ Personalized Email Delivery: Customized quotes sent to users based on preferences
 
-├─ Send personalized emails to each user
+✅ Comprehensive Logging: Application and database tracking for monitoring
 
-├─ Log email status in email_log 
+✅ Scalable Architecture: Designed to support hundreds to thousands of users
 
-├─ Send summary report to admin
+✅ Admin Reporting: Daily summary emails with delivery statistics
 
-└─ Schedule recurring tasks (daily/weekly)
+## Technical Implementation
+### Database Schema
 
-# Technical Implementation
-## API Integration & Data Ingestion
+The PostgreSQL database includes three main tables:
 
-**Script**: [./main.py](main.py)
+💠zenquote: Stores daily quotes with timestamps
 
-Python scripts were written to extract daily quotes from the ZenQuotes API and ingest them into a PostgreSQL database implementing 2 retry attempts for connectivity issues with a transaction date, indicating when each quote was fetched. The script uses `psycopg2.extras.execute_values()` for efficient bulk inserts, writing multiple records (quote, author, and transaction date) into the table. This ensures that each daily quote is stored reliably.
+💠 users: Manages subscriber information and preferences
 
+💠 email_log: Tracks all email delivery attempts
 
-## Database Schema
-**Tables Created:** [the sql statement](SQLstatement.sql)
+See [the sql statement](SQLstatement.sql) for complete schema definition.
 
-1. zenquote table - Stores daily quotes with timestamp
+### Core Functions Implemented
 
-2. users table - Manages subscriber information and preferences
-
-3. email_log table - Tracks all email delivery attempts
-
-## Users table & Email delivery
-
-The sample users table created stores each user’s email address, first name, activity status, and subscription frequency (daily or weekly). See [./SQLstatement.sql](SQLstatement.sql) for the SQL used to create it.
-
-## Key Functions Implemented
-
-| Function                    | Description                                                                                                                                                              |
+| Function                    | Purpose                                                                                                                                                              |
 | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **`get_daily_quote()`**     | Fetches a new quote from ZenQuotes API. Includes 2 retries in case of network failure and logs each attempt.                                                             |
 | **`save_quote_to_db()`**    | Inserts the fetched quote and author into the `zenquote` table in the database.                                                                                          |
@@ -65,58 +44,76 @@ The sample users table created stores each user’s email address, first name, a
 | **`log_email_status()`**    | Records both successful and failed email sends into the `email_log` table for traceability and monitoring.                                                               |
 | **`send_summary_report()`** | Sends a summary report to the admin email (set in `.env`) detailing how many emails were sent successfully or failed. Missing this report indicates a scheduler failure. |
 
-## Email Configuration Notes
+### Email Configuration
 
-During testing, Gmail’s default SMTP on port 587 (STARTTLS) failed due to timeout or firewall issues.
-Switching to SSL (port 465) resolved the problem, and email sending worked correctly.
+💠 During testing, Gmail’s default SMTP on port 587 (STARTTLS) failed due to timeout or firewall issues. Switching to SSL (port 465) resolved the problem, and email sending worked correctly.
 
-## Logging & Monitoring
+💠 Implements App Passwords sfor enhmaced security
 
-The `main.py` maintains full logs of operations:
+💠 Supports personalized content based on user preferences
 
-Application logs are saved in [quotes_mailer.log](quotes_mailer.log), showing daily activities, retries, and email status.
+### Logging & Monitoring
 
-Database logs are stored in the email_log table, including email address, firstname, frequency, quote, author, send status, and timestamp. This provides complete visibility for monitoring and analytics.
+**Application logs** are saved in [quotes_mailer.log](quotes_mailer.log), showing daily activities, retries, and email status.
 
-Likewise, daily email stats and summary logs was sent to the admin to note how many successful and failed emails.
+**Database logs** are stored in the email_log table, including email address, firstname, frequency, quote, author, send status, and timestamp. This provides complete visibility for monitoring and analytics.
 
-## Summary of Script Flow
+**Admin Reports:** Daily summary emails with success/failure metrics.
 
-**Start**
+### Scheduling (Windows Task Scheduler)
 
-├─ Load environment variables and initialize logging
+The system is configured to run automatically:
 
-├─ Fetch daily quote from API
+-- Daily at 7:00 AM for daily subscribers
 
-├─ Save quote to PostgreSQL table (zenquote)
+-- Weekly at 7:00 AM for weekly subscribers
 
-├─ Retrieve users (daily/weekly subscribers)
+Setup steps:
 
-├─ Send personalized emails to users
+1. Create new task with appropriate name and description
 
-├─ Log all sent statuses to DB (email_log)
+2. Set trigger for daily/weekly execution at 7:00 AM
 
-├─ Send summary report to admin
+3. Configure action to run Python script with required arguments
 
-└─ Schedule tasks daily/weekly
+4. Test configuration to ensure proper execution
 
 
-## Scheduling (Windows Task Scheduler)
+## Installation & Setup
+### Prerequisites
+1. Python 3.8+
 
-The script was automated using Windows Task Scheduler to run daily and weekly at 7:00 AM. Cron job (crontab -e) could not be used as the script was not written in linux environment.
+2. PostgreSQL
 
-**Setup Steps**
+3. Gmail account with App Password configured
 
-1. Created a New Task: Added task name and description. Ensure it runs even when the computer is asleep or logged out.
+**Configuration**
 
-![alt text](images/Creating%20Task%20Scheduler.png)
+1. Clone the repository
 
-2. Specified the Action by selecting _Start a Program_ and browse to the Python executable. Script path added in“Arguments”.
+2. Install dependencies: pip install -r requirements.txt
 
-![alt text](images/Task%20Action.png)
+3. Set up PostgreSQL database using [the sql statement](SQLstatement.sql)
 
-3. The trigger timing and schedule settings created to run daily
+4. Configure environment variables in `.env` file
 
-![alt text](images/Trigger%20creation.png)
+5. Generate Gmail App Password for secure email sending
 
-4. Saved and run-test to confirm the email delivery and logs
+**Environment Variables**
+
+    DATABASE_URL=postgresql://user:password@localhost/dbname
+    SMTP_SERVER=smtp.gmail.com
+    SMTP_PORT=465
+    EMAIL_USER=your-email@gmail.com
+    EMAIL_PASSWORD=your-app-password
+    ADMIN_EMAIL=admin@example.com
+
+**Alternative Scheduling**
+
+For cross-platform deployment, consider:
+
+1. Cron jobs (Linux/Mac) or
+
+2. Docker containers with scheduled execution or
+
+3. Cloud-based scheduler services
