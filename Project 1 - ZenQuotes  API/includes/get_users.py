@@ -13,9 +13,6 @@ def get_users(frequency):
         engine = get_engine()
         conn = engine.raw_connection()
         cur=conn.cursor()
-        #create_engine(f'postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}' )
-        #with get_connection() as conn:
-            #with conn.cursor() as cur:
         query = """
             SELECT email_address, firstname, email_frequency_preference
             FROM dbo.users
@@ -36,11 +33,3 @@ def get_users(frequency):
         if conn:
             conn.close()
     
-if __name__=="__main__":
-    today = datetime.today()
-    frequency = 'Weekly' if today.weekday() == 5 else 'Daily'
-    
-    users = get_users(frequency)
-    print(f'Found {len(users)} {frequency} users:')
-    for user in users:
-        print(f' - {user.firstname} - ({user.email}) - {user.frequency}')

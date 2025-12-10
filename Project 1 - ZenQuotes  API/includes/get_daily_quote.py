@@ -26,21 +26,11 @@ def get_daily_quote(retries=2, delay=3):
             author = data[0]['a']
             trans_date = datetime.now()
 
-            logging.info("=" * 50)
             logging.info(f"Quote fetched successfully: \"{quote}\" — {author}")
             return quote, author
         except Exception as e:
-            logging.info("=" * 50)
             logging.warning(f"Attempt {attempt}/{retries} failed fetching quote: {e}")
             if (attempt < retries):
                 time.sleep(delay)
     logging.error("All retries failed fetching the quote.")
     return None, None
-
-if __name__ == "__main__":
-    quote,author=get_daily_quote()
-    if quote:
-        print(f'Quote: "{quote}"')
-        print(f'Author: "{author}"')
-    else:
-        print('Failed to fetch quote')

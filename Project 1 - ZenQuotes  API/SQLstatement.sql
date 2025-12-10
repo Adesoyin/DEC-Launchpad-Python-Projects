@@ -20,9 +20,9 @@ CREATE TABLE dbo.users (
 INSERT INTO dbo.users (email_address, name, firstname, subscription_status, email_frequency_preference) VALUES
 ('adeboladesoyin@gmail.com', 'Adebola Adesoyin', 'Adebola', 'Active', 'Daily'),
 ('michael.brown@inboxbase.org', 'Michael Brown', 'Micheal', 'Inactive', 'Weekly'),
-('lucy.smith@noreplydemo.com', 'Lucy Smith', 'Lucy', 'Active', 'Weekly'),
-('solapeajiboye@gmail.com', 'Solape Ajiboye', 'Solape', 'Active', 'Daily'),
-('emma.johnson@mailnode.org', 'Emma Johnson', 'Emma', 'Active', 'Weekly');
+('adeboladesoyin@outlook.com', 'Esther Ade', 'Esther', 'Active', 'Weekly'),
+('raufisa68@gmail.com', 'Abdulrauf Isa', 'Abdulrauf', 'Active', 'Daily'),
+('emma.johnson@mailnode.org', 'Emma Johnson', 'Emma', 'Inactive', 'Weekly');
 
 -- Verify the data
 SELECT * FROM dbo.users;

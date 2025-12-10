@@ -21,17 +21,6 @@ def save_quote_to_db(quote, author):
             """
             cur.execute(insert_query, (quote, author, current_date))
             conn.commit()
-                # zenquotes = pd.DataFrame(
-                #     [{
-                #         "quote": quote,
-                #         "author": author,
-                #         "trans_date": current_date
-                #     }]
-                # )
-
-        # with get_connection() as conn:
-        #     with conn.cursor() as cur:
-        #         zenquotes.to_sql("zenquote", conn, schema="dbo", if_exists="append", index=False)
 
         logging.info(f"Quote successfully inserted into zenquote table.")
         print("Quote successfully inserted into zenquote table.")
