@@ -39,7 +39,7 @@ def handle_failure_action():
 def send_summary_report(frequency, results, quote, author):
     """This sends summary email to the admin after every daily run"""
     total_sent = len(results)
-    success_count = sum(1 for r in results if r[3] == "Success")
+    success_count = sum(1 for r in results if r[3] == True) #"Success")
     failed_count = total_sent - success_count
 
     subject = f"Summary Report: {frequency} ZenQuotes — {datetime.now():%Y-%m-%d}"
@@ -58,7 +58,6 @@ def send_summary_report(frequency, results, quote, author):
 
     # Send the summary to admin
     if send_email(ADMIN_EMAIL, subject, body):
-        send_email(ADMIN_EMAIL, subject, body)
         logging.info(f'Summary report sent to admin: {ADMIN_EMAIL}')
     else:
         handle_failure_action()

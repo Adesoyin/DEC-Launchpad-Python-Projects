@@ -429,3 +429,93 @@ DETAIL:  Key (quote, trans_date)=(If you haven't the strength to impose your own
 2025-12-10 11:03:05,714 [INFO] Daily quote process finished.
 2025-12-10 11:03:05,715 [INFO] ==================================================
 2025-12-10 11:03:05,716 [INFO]                                                   
+2025-12-11 09:05:00,121 [INFO]                                                   
+2025-12-11 09:05:00,124 [INFO] Today is Thursday - Running Daily quote
+2025-12-11 09:05:00,125 [INFO] Starting Daily quote sending process....
+2025-12-11 09:05:02,608 [INFO] Quote fetched successfully: "The important thing is not to stop questioning. Curiosity has its own reason for existing." — Albert Einstein
+2025-12-11 09:05:03,119 [INFO] SQLAlchemy engine created successfully
+2025-12-11 09:05:04,396 [INFO] Quote successfully inserted into zenquote table.
+2025-12-11 09:05:04,400 [INFO] SQLAlchemy engine created successfully
+2025-12-11 09:05:05,185 [INFO] Retrieved 1 active Daily user(s).
+2025-12-11 09:05:05,188 [INFO] Preparing to send mail to 1 user(s)...
+2025-12-11 09:05:26,407 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-12-11 09:05:26,408 [INFO] SQLAlchemy engine created successfully
+2025-12-11 09:05:29,621 [INFO] Logged 1 email results successfully into email_log table.
+2025-12-11 09:05:50,671 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-12-11 09:05:50,672 [INFO] Failed to send summary email to admin, timed out
+2025-12-11 09:05:50,673 [INFO] Daily quote process finished.
+2025-12-11 09:05:50,673 [INFO] ==================================================
+2025-12-11 09:05:50,673 [INFO]                                                   
+2025-12-11 09:33:42,994 [INFO]                                                   
+2025-12-11 09:33:43,000 [INFO] Today is Thursday - Running Daily quote
+2025-12-11 09:33:43,000 [INFO] Starting Daily quote sending process....
+2025-12-11 09:33:44,724 [INFO] Quote fetched successfully: "The important thing is not to stop questioning. Curiosity has its own reason for existing." — Albert Einstein
+2025-12-11 09:33:44,820 [INFO] SQLAlchemy engine created successfully
+2025-12-11 09:33:45,047 [ERROR] Failed to insert quote into DB: duplicate key value violates unique constraint "zenquotekey"
+DETAIL:  Key (quote, trans_date)=(The important thing is not to stop questioning. Curiosity has its own reason for existing., 2025-12-11) already exists.
+
+2025-12-11 09:33:45,048 [INFO] SQLAlchemy engine created successfully
+2025-12-11 09:33:45,280 [INFO] Retrieved 1 active Daily user(s).
+2025-12-11 09:33:45,281 [INFO] Preparing to send mail to 1 user(s)...
+2025-12-11 09:34:06,630 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-12-11 09:34:06,648 [INFO] SQLAlchemy engine created successfully
+2025-12-11 09:34:06,960 [INFO] Logged 1 email results successfully into email_log table.
+2025-12-11 09:34:28,028 [ERROR] Failed to send email to adeboladesoyin@gmail.com: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-12-11 09:34:28,028 [INFO] Failed to send summary email to admin, timed out
+2025-12-11 09:34:28,029 [INFO] Daily quote process finished.
+2025-12-11 09:34:28,029 [INFO] ==================================================
+2025-12-11 09:34:28,029 [INFO]                                                   
+2025-12-12 09:26:12,646 [INFO]                                                   
+2025-12-12 09:26:12,648 [INFO] Today is Friday - Running Daily quote
+2025-12-12 09:26:12,648 [INFO] Starting Daily quote sending process....
+2025-12-12 09:26:15,076 [INFO] Quote fetched successfully: "Most people achieved their greatest success one step beyond what looked like their greatest failure." — Brian Tracy
+2025-12-12 09:26:15,527 [INFO] SQLAlchemy engine created successfully
+2025-12-12 09:26:16,454 [INFO] Quote successfully inserted into zenquote table.
+2025-12-12 09:26:16,458 [INFO] SQLAlchemy engine created successfully
+2025-12-12 09:26:17,057 [INFO] Retrieved 1 active Daily user(s).
+2025-12-12 09:26:17,060 [INFO] Preparing to send mail to 1 user(s)...
+2025-12-12 09:26:22,337 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-12-12 09:26:22,338 [INFO] SQLAlchemy engine created successfully
+2025-12-12 09:26:22,765 [INFO] Logged 1 email results successfully into email_log table.
+2025-12-12 09:26:28,481 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-12-12 09:26:31,962 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-12-12 09:26:31,962 [INFO] Summary report sent to admin: adeboladesoyin@gmail.com
+2025-12-12 09:26:31,963 [INFO] Daily quote process finished.
+2025-12-12 09:26:31,963 [INFO] ==================================================
+2025-12-12 09:26:31,963 [INFO]                                                   
+2025-12-13 16:11:20,424 [INFO]                                                   
+2025-12-13 16:11:20,425 [INFO] Today is saturday-Running weekly quote
+2025-12-13 16:11:20,426 [INFO] Starting Weekly quote sending process....
+2025-12-13 16:11:22,305 [INFO] Quote fetched successfully: "Curiosity is the most powerful thing you own. Imagination is a force that can actually manifest a reality." — James Cameron
+2025-12-13 16:11:22,416 [INFO] SQLAlchemy engine created successfully
+2025-12-13 16:11:22,606 [INFO] Quote successfully inserted into zenquote table.
+2025-12-13 16:11:22,607 [INFO] SQLAlchemy engine created successfully
+2025-12-13 16:11:22,762 [INFO] Retrieved 1 active Weekly user(s).
+2025-12-13 16:11:22,763 [INFO] Preparing to send mail to 1 user(s)...
+2025-12-13 16:11:26,228 [INFO] Email sent successfully to adebola.adesoyin@avonhealthcare.com
+2025-12-13 16:11:26,229 [INFO] SQLAlchemy engine created successfully
+2025-12-13 16:11:26,401 [INFO] Logged 1 email results successfully into email_log table.
+2025-12-13 16:11:29,269 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-12-13 16:11:32,085 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-12-13 16:11:32,085 [INFO] Summary report sent to admin: adeboladesoyin@gmail.com
+2025-12-13 16:11:32,085 [INFO] Weekly quote process finished.
+2025-12-13 16:11:32,086 [INFO] ==================================================
+2025-12-13 16:11:32,086 [INFO]                                                   
+2025-12-14 20:44:31,942 [INFO]                                                   
+2025-12-14 20:44:31,945 [INFO] Today is Sunday - Running Daily quote
+2025-12-14 20:44:31,945 [INFO] Starting Daily quote sending process....
+2025-12-14 20:44:33,852 [INFO] Quote fetched successfully: "One machine can do the work of fifty ordinary men. No machine can do the work of one extraordinary man." — Elbert Hubbard
+2025-12-14 20:44:34,133 [INFO] SQLAlchemy engine created successfully
+2025-12-14 20:44:34,605 [INFO] Quote successfully inserted into zenquote table.
+2025-12-14 20:44:34,607 [INFO] SQLAlchemy engine created successfully
+2025-12-14 20:44:34,948 [INFO] Retrieved 1 active Daily user(s).
+2025-12-14 20:44:34,949 [INFO] Preparing to send mail to 1 user(s)...
+2025-12-14 20:44:39,624 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-12-14 20:44:39,626 [INFO] SQLAlchemy engine created successfully
+2025-12-14 20:44:39,973 [INFO] Logged 1 email results successfully into email_log table.
+2025-12-14 20:44:44,948 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-12-14 20:44:52,711 [INFO] Email sent successfully to adeboladesoyin@gmail.com
+2025-12-14 20:44:52,711 [INFO] Summary report sent to admin: adeboladesoyin@gmail.com
+2025-12-14 20:44:52,711 [INFO] Daily quote process finished.
+2025-12-14 20:44:52,712 [INFO] ==================================================
+2025-12-14 20:44:52,712 [INFO]                                                   
